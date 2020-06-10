@@ -1,0 +1,42 @@
+.agentDialerResultsReport {
+    position: relative; 
+    width: 1000px;
+}
+
+#agentDialerResultsReportHeader {
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: underline;
+    margin-left: 2px;
+}
+
+.agentDialerResultsSecHeader {
+    font-size: x-large;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#agentDialerResultsHeaderTop {
+    font-weight: bold;
+    font-size: medium;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin-top: 20px;
+    margin-left: 5px;
+    padding: 0px;
+}
+
+#agentDialerResultsHeaderBottom {
+    font-weight: bold;
+    font-size: medium;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;    
+    margin-left: 5px;
+    margin-bottom: 15px;
+    padding: 0px;
+}

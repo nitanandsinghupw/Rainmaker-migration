@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type="text/javascript">
+var progressVal = 5;
+function startProgress(){
+	
+	t = setTimeout('showExport()',100)
+}
+function showExport(){
+	
+	progressVal = progressVal + 5;
+	if(progressVal > 95)
+		progressVal = 10;
+
+	parent.showExport(progressVal);
+	//alert("test")
+	t = setTimeout('showExport()',500)
+}
+</script>
+</head>
+
+<body >
+<div id="txt"></div>
+</body>
+</html>
+

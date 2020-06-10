@@ -1,0 +1,44 @@
+﻿<html>
+<head>
+	<title>Hello World From The Template Engine</title>
+</head>
+
+<body>
+
+This is a simple template with nothing to do! This is version 4!
+<br/><br/>
+
+Hello, $name$
+
+
+<!-- Example of Creating a table? -->
+<table>
+$users:
+	{
+  <tr>
+    <td>$it.name$</td><td>$it.age$</td>
+  </tr>
+	}$
+</table>
+
+</body>
+</html>
+
+
+// Manually Create Template: StringTemplate hello = new StringTemplate("Hello, $name$");
+		User[] users = new User[] {
+			new User("Boris", 39),
+			new User("Natasha", 31),
+			new User("Jorge", 25),
+			new User("Vladimir", 28)
+		};
+		
+		
+		
+		
+		class User
+			{
+			public User(string name, int age) { this.name = name; this.age = age; }
+			public string name;
+			public int age;
+			}

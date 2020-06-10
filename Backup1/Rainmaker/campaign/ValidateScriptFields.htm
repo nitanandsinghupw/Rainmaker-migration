@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script language="javascript">
+
+	function CheckFileds(){
+		var arrScriptFileds = new Array();
+		var repeatedfields = new Array();
+
+		$("input").each(function (i) {        
+			
+			for(j=0;j<arrScriptFileds.length;j++){
+				if(arrScriptFileds[j][1] == this.name && arrScriptFileds[j][0] != "radio"){
+					repeatedfields[repeatedfields.length] = this.name;
+				}
+			}
+
+			arrScriptFileds[arrScriptFileds.length] = new Array(this.type, this.name)
+		});	
+
+		$("select").each(function (i) {
+	        for(j=0;j<arrScriptFileds.length;j++){
+				if(arrScriptFileds[j][1] == this.name){
+					repeatedfields[repeatedfields.length] = this.name;
+				}
+			}
+
+			arrScriptFileds[arrScriptFileds.length] = new Array(this.type, this.name)
+		});	
+		if(repeatedfields.length > 0){
+			alert("The following campaign fields are repeated : " + repeatedfields + "\nThis may result in errors when the script is used by an agent. Please correct.")
+			return false;
+		}
+		return true;
+	}
+
+</script>
+
+
+</HEAD>
+
+<BODY>
+<div id="divHtml"></div>
+</BODY>
+</HTML>

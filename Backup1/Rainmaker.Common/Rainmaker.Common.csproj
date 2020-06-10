@@ -1,0 +1,104 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBAE3851-253B-4B1D-8122-132DE8A3341B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rainmaker.Common</RootNamespace>
+    <AssemblyName>Rainmaker.Common</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Csv\CsvReader.cs" />
+    <Compile Include="Csv\CsvReader.RecordEnumerator.cs" />
+    <Compile Include="Csv\Exceptions\MalformedCsvException.cs" />
+    <Compile Include="Csv\Resources\CachedCsvReader.cs" />
+    <Compile Include="Csv\Resources\ExceptionMessage.Designer.cs" />
+    <Compile Include="DomainModel\Agent.cs" />
+    <Compile Include="DomainModel\AgentActivity.cs" />
+    <Compile Include="DomainModel\AgentCampaignMap.cs" />
+    <Compile Include="DomainModel\AgentLogin.cs" />
+    <Compile Include="DomainModel\AgentStat.cs" />
+    <Compile Include="DomainModel\AreaCode.cs" />
+    <Compile Include="DomainModel\AreaCodeRule.cs" />
+    <Compile Include="DomainModel\CallList.cs" />
+    <Compile Include="DomainModel\Campaign.cs" />
+    <Compile Include="DomainModel\CampaignDetails.cs" />
+    <Compile Include="DomainModel\CampaignFields.cs" />
+    <Compile Include="DomainModel\CampaignQueryStatus.cs" />
+    <Compile Include="DomainModel\CloneInfo.cs" />
+    <Compile Include="DomainModel\QueryTree.cs" />
+    <Compile Include="Extensions\RijndaelEnhanced.cs" />
+    <Compile Include="DomainModel\Station.cs" />
+    <Compile Include="DomainModel\DialingParameter.cs" />
+    <Compile Include="DomainModel\DigitalizedRecording.cs" />
+    <Compile Include="DomainModel\Encryption.cs" />
+    <Compile Include="DomainModel\FieldTypes.cs" />
+    <Compile Include="DomainModel\GlobalDialingParams.cs" />
+    <Compile Include="DomainModel\ImportFieldRow.cs" />
+    <Compile Include="DomainModel\ImportStats.cs" />
+    <Compile Include="DomainModel\OtherParameter.cs" />
+    <Compile Include="DomainModel\Query.cs" />
+    <Compile Include="DomainModel\QueryDetail.cs" />
+    <Compile Include="DomainModel\ResultCode.cs" />
+    <Compile Include="DomainModel\Script.cs" />
+    <Compile Include="DomainModel\Serialize.cs" />
+    <Compile Include="DomainModel\SilentCall.cs" />
+    <Compile Include="DomainModel\Training.cs" />
+    <Compile Include="Extensions\String.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Csv\Resources\ExceptionMessage.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

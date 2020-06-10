@@ -1,0 +1,1505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Authenticate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ipAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hostName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenticateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenticateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAgentByAgentID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="agentID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAgentByAgentIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAgentByAgentIDResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAgentWithActivityDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="agentID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="activityId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="ipAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hostName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAgentWithActivityDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAgentWithActivityDetailsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ToggleAgentReset">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="agentID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="resetSwitch" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ToggleAgentResetResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAgentList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAgentListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAgentListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAgentsByCampaign">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAgentsByCampaignResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAgentsByCampaignResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLoggedInAgents">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLoggedInAgentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLoggedInAgentsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAgentStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xAgent">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAgentStatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AgentInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xAgent">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgentInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgentInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAgent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="agentID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAgentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteAgentResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgentCampaignMapInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xAgentCampaignMap">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgentCampaignMapInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgentCampaignMapInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAgentCampaignMapByAgentID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="agentID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAgentCampaignMapByAgentIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAgentCampaignMapByAgentIDResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLoginStatusList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLoginStatusListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLoginStatusListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginStatusInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xAgentLogin">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="currentCampaignDBConn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginStatusInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginStatusInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLoginStatusAgentID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="agentID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="currentCampaignDBConn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLoginStatusAgentIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLoginStatusAgentIDResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgentActivityInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xAgent">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgentActivityInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgentActivityInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAgentLogOut">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xAgent">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAgentLogOutResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetScript">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetScriptResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetScriptResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetScript2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="isVerification" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetScript2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetScript2Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignByAgentID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xAgent">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignByAgentIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCampaignByAgentIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignDetailsByAgentID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="agentID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="isManualDial" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignDetailsByAgentIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCampaignDetailsByAgentIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignDetailsByPhoneNum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="phoneNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignDetailsByPhoneNumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCampaignDetailsByPhoneNumResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateResultCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xAgent">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="uniqueKey" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="callresultcode" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="queryId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateResultCodeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="InsertUpdateStation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xAgentStation">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertUpdateStationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertUpdateStationResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStationByStationID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="stationID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStationByStationIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStationByStationIDResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStationList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetStationListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStationListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteStation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="stationID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteStationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteStationResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCampaignManualDial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="agentID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="agentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phoneNum" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCampaignManualDialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertCampaignManualDialResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsDialerRunning">
+        <s:complexType />
+      </s:element>
+      <s:element name="IsDialerRunningResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsDialerRunningResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCampaignTransferCall">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCampDB" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="UniqueKey" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="xAgent">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="offsiteNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCampaignTransferCallResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AuthenticateSoapIn">
+    <wsdl:part name="parameters" element="tns:Authenticate" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticateSoapOut">
+    <wsdl:part name="parameters" element="tns:AuthenticateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAgentByAgentIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAgentByAgentID" />
+  </wsdl:message>
+  <wsdl:message name="GetAgentByAgentIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAgentByAgentIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAgentWithActivityDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAgentWithActivityDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetAgentWithActivityDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAgentWithActivityDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ToggleAgentResetSoapIn">
+    <wsdl:part name="parameters" element="tns:ToggleAgentReset" />
+  </wsdl:message>
+  <wsdl:message name="ToggleAgentResetSoapOut">
+    <wsdl:part name="parameters" element="tns:ToggleAgentResetResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAgentListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAgentList" />
+  </wsdl:message>
+  <wsdl:message name="GetAgentListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAgentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAgentsByCampaignSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAgentsByCampaign" />
+  </wsdl:message>
+  <wsdl:message name="GetAgentsByCampaignSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAgentsByCampaignResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLoggedInAgentsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLoggedInAgents" />
+  </wsdl:message>
+  <wsdl:message name="GetLoggedInAgentsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLoggedInAgentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAgentStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAgentStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAgentStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAgentStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="AgentInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:AgentInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="AgentInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:AgentInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAgentSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteAgent" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAgentSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteAgentResponse" />
+  </wsdl:message>
+  <wsdl:message name="AgentCampaignMapInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:AgentCampaignMapInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="AgentCampaignMapInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:AgentCampaignMapInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAgentCampaignMapByAgentIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAgentCampaignMapByAgentID" />
+  </wsdl:message>
+  <wsdl:message name="GetAgentCampaignMapByAgentIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAgentCampaignMapByAgentIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLoginStatusListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLoginStatusList" />
+  </wsdl:message>
+  <wsdl:message name="GetLoginStatusListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLoginStatusListResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginStatusInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginStatusInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="LoginStatusInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginStatusInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLoginStatusAgentIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLoginStatusAgentID" />
+  </wsdl:message>
+  <wsdl:message name="GetLoginStatusAgentIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLoginStatusAgentIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="AgentActivityInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:AgentActivityInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="AgentActivityInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:AgentActivityInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAgentLogOutSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAgentLogOut" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAgentLogOutSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAgentLogOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetScriptSoapIn">
+    <wsdl:part name="parameters" element="tns:GetScript" />
+  </wsdl:message>
+  <wsdl:message name="GetScriptSoapOut">
+    <wsdl:part name="parameters" element="tns:GetScriptResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetScript2SoapIn">
+    <wsdl:part name="parameters" element="tns:GetScript2" />
+  </wsdl:message>
+  <wsdl:message name="GetScript2SoapOut">
+    <wsdl:part name="parameters" element="tns:GetScript2Response" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignByAgentIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampaignByAgentID" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignByAgentIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCampaignByAgentIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignDetailsByAgentIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampaignDetailsByAgentID" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignDetailsByAgentIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCampaignDetailsByAgentIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignDetailsByPhoneNumSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampaignDetailsByPhoneNum" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignDetailsByPhoneNumSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCampaignDetailsByPhoneNumResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateResultCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateResultCode" />
+  </wsdl:message>
+  <wsdl:message name="UpdateResultCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateResultCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertUpdateStationSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertUpdateStation" />
+  </wsdl:message>
+  <wsdl:message name="InsertUpdateStationSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertUpdateStationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStationByStationIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStationByStationID" />
+  </wsdl:message>
+  <wsdl:message name="GetStationByStationIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStationByStationIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStationListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStationList" />
+  </wsdl:message>
+  <wsdl:message name="GetStationListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStationListResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteStationSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteStation" />
+  </wsdl:message>
+  <wsdl:message name="DeleteStationSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteStationResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertCampaignManualDialSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertCampaignManualDial" />
+  </wsdl:message>
+  <wsdl:message name="InsertCampaignManualDialSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertCampaignManualDialResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsDialerRunningSoapIn">
+    <wsdl:part name="parameters" element="tns:IsDialerRunning" />
+  </wsdl:message>
+  <wsdl:message name="IsDialerRunningSoapOut">
+    <wsdl:part name="parameters" element="tns:IsDialerRunningResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddCampaignTransferCallSoapIn">
+    <wsdl:part name="parameters" element="tns:AddCampaignTransferCall" />
+  </wsdl:message>
+  <wsdl:message name="AddCampaignTransferCallSoapOut">
+    <wsdl:part name="parameters" element="tns:AddCampaignTransferCallResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AgentServiceSoap">
+    <wsdl:operation name="Authenticate">
+      <wsdl:input message="tns:AuthenticateSoapIn" />
+      <wsdl:output message="tns:AuthenticateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentByAgentID">
+      <wsdl:input message="tns:GetAgentByAgentIDSoapIn" />
+      <wsdl:output message="tns:GetAgentByAgentIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentWithActivityDetails">
+      <wsdl:input message="tns:GetAgentWithActivityDetailsSoapIn" />
+      <wsdl:output message="tns:GetAgentWithActivityDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ToggleAgentReset">
+      <wsdl:input message="tns:ToggleAgentResetSoapIn" />
+      <wsdl:output message="tns:ToggleAgentResetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentList">
+      <wsdl:input message="tns:GetAgentListSoapIn" />
+      <wsdl:output message="tns:GetAgentListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentsByCampaign">
+      <wsdl:input message="tns:GetAgentsByCampaignSoapIn" />
+      <wsdl:output message="tns:GetAgentsByCampaignSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoggedInAgents">
+      <wsdl:input message="tns:GetLoggedInAgentsSoapIn" />
+      <wsdl:output message="tns:GetLoggedInAgentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAgentStatus">
+      <wsdl:input message="tns:UpdateAgentStatusSoapIn" />
+      <wsdl:output message="tns:UpdateAgentStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AgentInsertUpdate">
+      <wsdl:input message="tns:AgentInsertUpdateSoapIn" />
+      <wsdl:output message="tns:AgentInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAgent">
+      <wsdl:input message="tns:DeleteAgentSoapIn" />
+      <wsdl:output message="tns:DeleteAgentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AgentCampaignMapInsertUpdate">
+      <wsdl:input message="tns:AgentCampaignMapInsertUpdateSoapIn" />
+      <wsdl:output message="tns:AgentCampaignMapInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentCampaignMapByAgentID">
+      <wsdl:input message="tns:GetAgentCampaignMapByAgentIDSoapIn" />
+      <wsdl:output message="tns:GetAgentCampaignMapByAgentIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginStatusList">
+      <wsdl:input message="tns:GetLoginStatusListSoapIn" />
+      <wsdl:output message="tns:GetLoginStatusListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginStatusInsertUpdate">
+      <wsdl:input message="tns:LoginStatusInsertUpdateSoapIn" />
+      <wsdl:output message="tns:LoginStatusInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginStatusAgentID">
+      <wsdl:input message="tns:GetLoginStatusAgentIDSoapIn" />
+      <wsdl:output message="tns:GetLoginStatusAgentIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AgentActivityInsertUpdate">
+      <wsdl:input message="tns:AgentActivityInsertUpdateSoapIn" />
+      <wsdl:output message="tns:AgentActivityInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAgentLogOut">
+      <wsdl:input message="tns:UpdateAgentLogOutSoapIn" />
+      <wsdl:output message="tns:UpdateAgentLogOutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScript">
+      <wsdl:input message="tns:GetScriptSoapIn" />
+      <wsdl:output message="tns:GetScriptSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScript2">
+      <wsdl:input message="tns:GetScript2SoapIn" />
+      <wsdl:output message="tns:GetScript2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignByAgentID">
+      <wsdl:input message="tns:GetCampaignByAgentIDSoapIn" />
+      <wsdl:output message="tns:GetCampaignByAgentIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignDetailsByAgentID">
+      <wsdl:input message="tns:GetCampaignDetailsByAgentIDSoapIn" />
+      <wsdl:output message="tns:GetCampaignDetailsByAgentIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignDetailsByPhoneNum">
+      <wsdl:input message="tns:GetCampaignDetailsByPhoneNumSoapIn" />
+      <wsdl:output message="tns:GetCampaignDetailsByPhoneNumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateResultCode">
+      <wsdl:input message="tns:UpdateResultCodeSoapIn" />
+      <wsdl:output message="tns:UpdateResultCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateStation">
+      <wsdl:input message="tns:InsertUpdateStationSoapIn" />
+      <wsdl:output message="tns:InsertUpdateStationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStationByStationID">
+      <wsdl:input message="tns:GetStationByStationIDSoapIn" />
+      <wsdl:output message="tns:GetStationByStationIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStationList">
+      <wsdl:input message="tns:GetStationListSoapIn" />
+      <wsdl:output message="tns:GetStationListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStation">
+      <wsdl:input message="tns:DeleteStationSoapIn" />
+      <wsdl:output message="tns:DeleteStationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCampaignManualDial">
+      <wsdl:input message="tns:InsertCampaignManualDialSoapIn" />
+      <wsdl:output message="tns:InsertCampaignManualDialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsDialerRunning">
+      <wsdl:input message="tns:IsDialerRunningSoapIn" />
+      <wsdl:output message="tns:IsDialerRunningSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCampaignTransferCall">
+      <wsdl:input message="tns:AddCampaignTransferCallSoapIn" />
+      <wsdl:output message="tns:AddCampaignTransferCallSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AgentServiceSoap" type="tns:AgentServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Authenticate">
+      <soap:operation soapAction="http://tempuri.org/Authenticate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentByAgentID">
+      <soap:operation soapAction="http://tempuri.org/GetAgentByAgentID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentWithActivityDetails">
+      <soap:operation soapAction="http://tempuri.org/GetAgentWithActivityDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ToggleAgentReset">
+      <soap:operation soapAction="http://tempuri.org/ToggleAgentReset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentList">
+      <soap:operation soapAction="http://tempuri.org/GetAgentList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentsByCampaign">
+      <soap:operation soapAction="http://tempuri.org/GetAgentsByCampaign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoggedInAgents">
+      <soap:operation soapAction="http://tempuri.org/GetLoggedInAgents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAgentStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateAgentStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgentInsertUpdate">
+      <soap:operation soapAction="http://tempuri.org/AgentInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAgent">
+      <soap:operation soapAction="http://tempuri.org/DeleteAgent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgentCampaignMapInsertUpdate">
+      <soap:operation soapAction="http://tempuri.org/AgentCampaignMapInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentCampaignMapByAgentID">
+      <soap:operation soapAction="http://tempuri.org/GetAgentCampaignMapByAgentID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginStatusList">
+      <soap:operation soapAction="http://tempuri.org/GetLoginStatusList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginStatusInsertUpdate">
+      <soap:operation soapAction="http://tempuri.org/LoginStatusInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginStatusAgentID">
+      <soap:operation soapAction="http://tempuri.org/GetLoginStatusAgentID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgentActivityInsertUpdate">
+      <soap:operation soapAction="http://tempuri.org/AgentActivityInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAgentLogOut">
+      <soap:operation soapAction="http://tempuri.org/UpdateAgentLogOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScript">
+      <soap:operation soapAction="http://tempuri.org/GetScript" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScript2">
+      <soap:operation soapAction="http://tempuri.org/GetScript2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignByAgentID">
+      <soap:operation soapAction="http://tempuri.org/GetCampaignByAgentID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignDetailsByAgentID">
+      <soap:operation soapAction="http://tempuri.org/GetCampaignDetailsByAgentID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignDetailsByPhoneNum">
+      <soap:operation soapAction="http://tempuri.org/GetCampaignDetailsByPhoneNum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateResultCode">
+      <soap:operation soapAction="http://tempuri.org/UpdateResultCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateStation">
+      <soap:operation soapAction="http://tempuri.org/InsertUpdateStation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStationByStationID">
+      <soap:operation soapAction="http://tempuri.org/GetStationByStationID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStationList">
+      <soap:operation soapAction="http://tempuri.org/GetStationList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStation">
+      <soap:operation soapAction="http://tempuri.org/DeleteStation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCampaignManualDial">
+      <soap:operation soapAction="http://tempuri.org/InsertCampaignManualDial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsDialerRunning">
+      <soap:operation soapAction="http://tempuri.org/IsDialerRunning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCampaignTransferCall">
+      <soap:operation soapAction="http://tempuri.org/AddCampaignTransferCall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AgentServiceSoap12" type="tns:AgentServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Authenticate">
+      <soap12:operation soapAction="http://tempuri.org/Authenticate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentByAgentID">
+      <soap12:operation soapAction="http://tempuri.org/GetAgentByAgentID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentWithActivityDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetAgentWithActivityDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ToggleAgentReset">
+      <soap12:operation soapAction="http://tempuri.org/ToggleAgentReset" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentList">
+      <soap12:operation soapAction="http://tempuri.org/GetAgentList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentsByCampaign">
+      <soap12:operation soapAction="http://tempuri.org/GetAgentsByCampaign" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoggedInAgents">
+      <soap12:operation soapAction="http://tempuri.org/GetLoggedInAgents" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAgentStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateAgentStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgentInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/AgentInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAgent">
+      <soap12:operation soapAction="http://tempuri.org/DeleteAgent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgentCampaignMapInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/AgentCampaignMapInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentCampaignMapByAgentID">
+      <soap12:operation soapAction="http://tempuri.org/GetAgentCampaignMapByAgentID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginStatusList">
+      <soap12:operation soapAction="http://tempuri.org/GetLoginStatusList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginStatusInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/LoginStatusInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginStatusAgentID">
+      <soap12:operation soapAction="http://tempuri.org/GetLoginStatusAgentID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgentActivityInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/AgentActivityInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAgentLogOut">
+      <soap12:operation soapAction="http://tempuri.org/UpdateAgentLogOut" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScript">
+      <soap12:operation soapAction="http://tempuri.org/GetScript" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScript2">
+      <soap12:operation soapAction="http://tempuri.org/GetScript2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignByAgentID">
+      <soap12:operation soapAction="http://tempuri.org/GetCampaignByAgentID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignDetailsByAgentID">
+      <soap12:operation soapAction="http://tempuri.org/GetCampaignDetailsByAgentID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignDetailsByPhoneNum">
+      <soap12:operation soapAction="http://tempuri.org/GetCampaignDetailsByPhoneNum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateResultCode">
+      <soap12:operation soapAction="http://tempuri.org/UpdateResultCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateStation">
+      <soap12:operation soapAction="http://tempuri.org/InsertUpdateStation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStationByStationID">
+      <soap12:operation soapAction="http://tempuri.org/GetStationByStationID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStationList">
+      <soap12:operation soapAction="http://tempuri.org/GetStationList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStation">
+      <soap12:operation soapAction="http://tempuri.org/DeleteStation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCampaignManualDial">
+      <soap12:operation soapAction="http://tempuri.org/InsertCampaignManualDial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsDialerRunning">
+      <soap12:operation soapAction="http://tempuri.org/IsDialerRunning" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCampaignTransferCall">
+      <soap12:operation soapAction="http://tempuri.org/AddCampaignTransferCall" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AgentService">
+    <wsdl:port name="AgentServiceSoap" binding="tns:AgentServiceSoap">
+      <soap:address location="http://rainmaker/RainmakerWS/AgentService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AgentServiceSoap12" binding="tns:AgentServiceSoap12">
+      <soap12:address location="http://rainmaker/RainmakerWS/AgentService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

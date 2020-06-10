@@ -1,0 +1,61 @@
+#summarizedAgentResultsHeader {
+    
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: underline;
+    margin-left: 2px;
+}
+
+#summarizedAgentsResultsRow {
+
+    margin-left: 10px;
+    margin-bottom: 5px; 
+    border-style: none;
+}
+
+#summarizedAgentsResultsHeaderTop {
+    font-weight: bold;
+    font-size: medium;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin-top: 20px;
+    margin-left: 5px;
+    padding: 0px;
+}
+
+#summarizedAgentsResultsHeaderBottom {
+    font-weight: bold;
+    font-size: medium;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;    
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+#summarizedAgentsResultsFooter {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: medium;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0px;
+}
+
+.summarizedAgentResultsSecHeader {
+    font-size: x-large;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.summarizedAgentResultsReport {
+    position: relative; 
+    width: 1000px;
+}

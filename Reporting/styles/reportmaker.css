@@ -1,0 +1,73 @@
+/*
+ ** Style sheets that define apperance of each report.
+ ****************************************************/
+@import url(/reporting/styles/callhistoryreport.css);
+@import url(/reporting/styles/shiftreport.css);
+@import url(/reporting/styles/summarizedagentsresultsreport.css);
+@import url(/reporting/styles/agentsdialerresultsreport.css);
+
+/* Make sure that everything 'does not' have any margin or padding by default. */
+* { margin: 0; padding: 0; }
+
+/* Base style for the report maker */
+body 
+{
+	margin: 0px auto;
+  margin-top: 10px;
+  width: 1024px;
+  background-color: #222222;
+}
+
+/*
+ * Apperance of container for 'report type' and
+ * 'create report' button.
+ ************************************************/
+.reportChooserCtrls {
+    margin-top: 5px;
+    margin-left: 15px;
+    padding-bottom: 5px;
+}
+
+/* Apperance of container that holds report(s)..*/
+.reportStyle {
+    border: solid black 2px;
+    background: white;
+}
+
+/* Defines the region that the report is painted in */
+.reportPrintRegion {
+    display: none;
+    color: black;
+}
+
+/* 
+ * Each report has a unique set of options that govern it and this
+ * defines how it appears.
+ *********************************************************************/
+.reportCtrls {
+    display: none;
+    background-color: #C0C0C0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Each report has a unique set of options that govern it and this
+ * defines how each individual line of those options appears.
+ */
+.reportCtrlsRegion {
+    margin-top: 5px;
+    margin-left: 10px;
+    position: relative;
+}
+
+/*  
+ * The reportTools are only available when a report is displayed. They appear
+ * at the top and bottom of the report and allow you to do things like select
+ * the 'Print View'.
+ */
+.reportTools {
+    background-color: black;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+}

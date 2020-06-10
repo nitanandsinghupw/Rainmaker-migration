@@ -1,0 +1,4994 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InsertUpdateScheduledCampaign">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaigndetails">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertUpdateScheduledCampaignResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateCampaignSchedule">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaigndetails">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="isFromAgentInterface" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCampaignScheduleResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPhoneLinesInUseCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CampaignID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPhoneLinesInUseCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPhoneLinesInUseCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckCampaignTransferCall">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCampDB" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="UniqueKey" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckCampaignTransferCallResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckCampaignTransferCallResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitAdminRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="requestType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="requestData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitAdminRequestResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAdminRequests">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAdminRequestsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAdminRequestsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAdminRequestStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="requestID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="requestStatus" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAdminRequestStatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTrainingScheme">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="trainingSchemeID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrainingSchemeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTrainingSchemeResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrainingPageList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="trainingSchemeID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrainingPageListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTrainingPageListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrainingSchemeList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrainingSchemeListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTrainingSchemeListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateActiveTrainingScheme">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="trainingSchemeID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateActiveTrainingSchemeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteTrainingScheme">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="trainingSchemeID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteTrainingSchemeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddTrainingScheme">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="trainingSchemeName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTrainingSchemeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddTrainingSchemeResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrainingPage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="trainingPageID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrainingPageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTrainingPageResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrainingPageInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xTrainingPage">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrainingPageInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrainingPageInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActiveTrainingPageList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActiveTrainingPageListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetActiveTrainingPageListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CampaignInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xNodeCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CampaignInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CampaignInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ScrubDNC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="campaignConnString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ScrubDNCResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CampaignClone">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xNodeCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xNodeCloneInfo">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CampaignCloneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CampaignCloneResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CampaignStatusUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CampaignStatusUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CampaignStatusUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ResetCampaignsToIdle">
+        <s:complexType />
+      </s:element>
+      <s:element name="ResetCampaignsToIdleResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ShutdownAllCampaigns">
+        <s:complexType />
+      </s:element>
+      <s:element name="ShutdownAllCampaignsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCampaignActiveDialCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="campaignConnString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignActiveDialCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCampaignActiveDialCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CampaignDialStatusUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CampaignDialStatusUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CampaignDialStatusUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCampaignListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCampaignListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActiveCampaignList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetActiveCampaignListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetActiveCampaignListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignScoreBoardData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignScoreBoardDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCampaignScoreBoardDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCampaign">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CampaignID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="ShortDescription" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCampaignResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteCampaignResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignByCampaignID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CampaignID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignByCampaignIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCampaignByCampaignIDResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExportedLeads">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xKeysToDelete">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="strCampaignDBConn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExportedLeadsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateCallDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="XCampaignDetails">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="callType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="queryId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCallDetailResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SetCallHangup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="uniqueKey" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCampaignDbConn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetCallHangupResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="IsCallHangup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="uniqueKey" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCampaignDbConn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsCallHangupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsCallHangupResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAgentToCallDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="XCampaignDetails">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="isVerification" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAgentToCallDetailResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddVerificationAgentToCallDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Uniquekey" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="agentID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="agentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCampaignDBConn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddVerificationAgentToCallDetailResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddResultCodeToCallList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCampDB" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="UniqueKey" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="ResultDesc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="offsiteTransferNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddResultCodeToCallListResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetOffsiteTransferNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCampDB" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="UniqueKey" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="phoneNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOffsiteTransferNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOffsiteTransferNumberResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogSilentCall">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="XSilentCall">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogSilentCallResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateCallCompletion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="XCampaignDetails">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCallCompletionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateCampaignDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="strCampaignDetailsQuery" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCampaignDetailsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCampaignDetailsByKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CampaignDB" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="key" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="queryId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignDetailsByKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCampaignDetailsByKeyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetManualDailCallDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CampaignDB" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="agentID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetManualDailCallDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetManualDailCallDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetResultCodes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetResultCodesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetResultCodesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ResultCodeInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xResultCode">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ResultCodeInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ResultCodeInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetResultCodeByResultCodeID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="resultCodeID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetResultCodeByResultCodeIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetResultCodeByResultCodeIDResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOtherParameter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOtherParameterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOtherParameterResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OtherParameterInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xOtherParams">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OtherParameterInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OtherParameterInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDialingParameter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDialingParameterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDialingParameterResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DialingParameterInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xDialParams">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DialingParameterInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DialingParameterInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDialerActivity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dtConnectTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDialerActivityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertDialerActivityResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDialerStart">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lDialerActivityID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="dtDialerStartTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDialerStartResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateDialerStop">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lDialerActivityID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="dtDialerStopTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDialerStopResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDigitalizedRecording">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDigitalizedRecordingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDigitalizedRecordingResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DigitalizedRecordingInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xDigitalRec">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DigitalizedRecordingInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DigitalizedRecordingInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignQueryStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignQueryStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCampaignQueryStatusResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateQueryStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="strQueryCondition" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaignQueryStatus">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateQueryStatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="PrepareDialerQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="strQueryCondition" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="queryId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrepareDialerQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PrepareDialerQueryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CampaignQueryStatusUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="campaignQueryID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="isActive" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="isStandby" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="showMessage" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="resetStats" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CampaignQueryStatusUpdateResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CampaignQueryStatusUpdateDialer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="queryID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="isActive" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="isStandby" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CampaignQueryStatusUpdateDialerResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CampaignQueryComplete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="QueryID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="isActive" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="showMessage" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CampaignQueryCompleteResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateCampaignQueryStats">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaignQueryStatus">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCampaignQueryStatsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateCampaignQueryInDialerQueue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="queryId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="campaignDBConnString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCampaignQueryInDialerQueueResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ClearQueryStats">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strDBConn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strQueryCondition" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaignQueryStatus">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearQueryStatsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetScriptList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetScriptListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetScriptListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPageListByScriptId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="parentScriptId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPageListByScriptIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPageListByScriptIdResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetScriptByScriptID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="scriptID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetScriptByScriptIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetScriptByScriptIDResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetScriptByScriptGUID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="scriptGUID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetScriptByScriptGUIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetScriptByScriptGUIDResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CloneScript">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="campDbString" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="scriptId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="scriptName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cloneCampaignDB" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CloneScriptResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CloneScriptResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ScriptInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xScript">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ScriptInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ScriptInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteScript">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="scriptID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteScriptResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteScriptResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryDetailInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xQueryDetail" type="tns:ArrayOfXmlNode" />
+            <s:element minOccurs="0" maxOccurs="1" name="xQuery">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfXmlNode">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="XmlNode" nillable="true">
+            <s:complexType mixed="true">
+              <s:sequence>
+                <s:any />
+              </s:sequence>
+            </s:complexType>
+          </s:element>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryDetailInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryDetailInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQueryList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQueryListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetQueryListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActiveQueryList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActiveQueryListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetActiveQueryListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStandbyQueryList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStandbyQueryListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStandbyQueryListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCampaignDBConn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strQueryCondition" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCampaignDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignData_Recycle_Last">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCampaignDBConn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strQueryCondition" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="queryId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignData_Recycle_LastResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCampaignData_Recycle_LastResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsNeverCallSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCampaignDBConn" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="uniqueKey" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsNeverCallSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsNeverCallSetResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAvailableCountToQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCampaignDBConn" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="availableCount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="xQuery">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAvailableCountToQueryResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateCampaignQueriesStats">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCampaignQueriesStatsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetQueryDetailsByQueryID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="strQueryID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQueryDetailsByQueryIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetQueryDetailsByQueryIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="queryID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteQueryResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteQueryByName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="queryName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteQueryByNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteQueryByNameResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteQueryDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="queryDetailID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteQueryDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteQueryDetailResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AreaCodeRuleInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xAreaCodeRule">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AreaCodeRuleInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AreaCodeRuleInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AreaCodeInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xAreaCode">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AreaCodeInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AreaCodeInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAreaCode">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAreaCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAreaCodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAreaCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="areaCodeID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAreaCodeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAreaCodeRuleByAgentID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="agentID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAreaCodeRuleByAgentIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAreaCodeRuleByAgentIDResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GlobalDialingInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xGlobalDialing">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GlobalDialingInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GlobalDialingInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGlobalDialingParams">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetGlobalDialingParamsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGlobalDialingParamsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAgentStat">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="campaignDBConnString" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="campaignId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAgentStatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAgentStatResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAgentStatByStatID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="agentStatID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAgentStatByStatIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAgentStatByStatIDResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertUpdateAgentStat">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xAgentStat">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertUpdateAgentStatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertUpdateAgentStatResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAgentStats">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="agentID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLeadprocessed" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAgentStatsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateAgentStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xAgent">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAgentStatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCampaignFields">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignFieldsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCampaignFieldsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="campaignID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCampaignStatusResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFieldTypes">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetFieldTypesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFieldTypesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CampaignFieldsInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaignFields">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CampaignFieldsInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CampaignFieldsInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCampaignField">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="fieldID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCampaignFieldResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertUpdateScheduledCampaignSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertUpdateScheduledCampaign" />
+  </wsdl:message>
+  <wsdl:message name="InsertUpdateScheduledCampaignSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertUpdateScheduledCampaignResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCampaignScheduleSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCampaignSchedule" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCampaignScheduleSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCampaignScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPhoneLinesInUseCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPhoneLinesInUseCount" />
+  </wsdl:message>
+  <wsdl:message name="GetPhoneLinesInUseCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPhoneLinesInUseCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckCampaignTransferCallSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckCampaignTransferCall" />
+  </wsdl:message>
+  <wsdl:message name="CheckCampaignTransferCallSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckCampaignTransferCallResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubmitAdminRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:SubmitAdminRequest" />
+  </wsdl:message>
+  <wsdl:message name="SubmitAdminRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:SubmitAdminRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAdminRequestsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAdminRequests" />
+  </wsdl:message>
+  <wsdl:message name="GetAdminRequestsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAdminRequestsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAdminRequestStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAdminRequestStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAdminRequestStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAdminRequestStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTrainingSchemeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTrainingScheme" />
+  </wsdl:message>
+  <wsdl:message name="GetTrainingSchemeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTrainingSchemeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTrainingPageListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTrainingPageList" />
+  </wsdl:message>
+  <wsdl:message name="GetTrainingPageListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTrainingPageListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTrainingSchemeListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTrainingSchemeList" />
+  </wsdl:message>
+  <wsdl:message name="GetTrainingSchemeListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTrainingSchemeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateActiveTrainingSchemeSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateActiveTrainingScheme" />
+  </wsdl:message>
+  <wsdl:message name="UpdateActiveTrainingSchemeSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateActiveTrainingSchemeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTrainingSchemeSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteTrainingScheme" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTrainingSchemeSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteTrainingSchemeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTrainingSchemeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTrainingScheme" />
+  </wsdl:message>
+  <wsdl:message name="AddTrainingSchemeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTrainingSchemeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTrainingPageSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTrainingPage" />
+  </wsdl:message>
+  <wsdl:message name="GetTrainingPageSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTrainingPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrainingPageInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:TrainingPageInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="TrainingPageInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:TrainingPageInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetActiveTrainingPageListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetActiveTrainingPageList" />
+  </wsdl:message>
+  <wsdl:message name="GetActiveTrainingPageListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetActiveTrainingPageListResponse" />
+  </wsdl:message>
+  <wsdl:message name="CampaignInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:CampaignInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="CampaignInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:CampaignInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ScrubDNCSoapIn">
+    <wsdl:part name="parameters" element="tns:ScrubDNC" />
+  </wsdl:message>
+  <wsdl:message name="ScrubDNCSoapOut">
+    <wsdl:part name="parameters" element="tns:ScrubDNCResponse" />
+  </wsdl:message>
+  <wsdl:message name="CampaignCloneSoapIn">
+    <wsdl:part name="parameters" element="tns:CampaignClone" />
+  </wsdl:message>
+  <wsdl:message name="CampaignCloneSoapOut">
+    <wsdl:part name="parameters" element="tns:CampaignCloneResponse" />
+  </wsdl:message>
+  <wsdl:message name="CampaignStatusUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:CampaignStatusUpdate" />
+  </wsdl:message>
+  <wsdl:message name="CampaignStatusUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:CampaignStatusUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ResetCampaignsToIdleSoapIn">
+    <wsdl:part name="parameters" element="tns:ResetCampaignsToIdle" />
+  </wsdl:message>
+  <wsdl:message name="ResetCampaignsToIdleSoapOut">
+    <wsdl:part name="parameters" element="tns:ResetCampaignsToIdleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ShutdownAllCampaignsSoapIn">
+    <wsdl:part name="parameters" element="tns:ShutdownAllCampaigns" />
+  </wsdl:message>
+  <wsdl:message name="ShutdownAllCampaignsSoapOut">
+    <wsdl:part name="parameters" element="tns:ShutdownAllCampaignsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignActiveDialCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampaignActiveDialCount" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignActiveDialCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCampaignActiveDialCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="CampaignDialStatusUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:CampaignDialStatusUpdate" />
+  </wsdl:message>
+  <wsdl:message name="CampaignDialStatusUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:CampaignDialStatusUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampaignList" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCampaignListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetActiveCampaignListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetActiveCampaignList" />
+  </wsdl:message>
+  <wsdl:message name="GetActiveCampaignListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetActiveCampaignListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignScoreBoardDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampaignScoreBoardData" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignScoreBoardDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCampaignScoreBoardDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCampaignSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteCampaign" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCampaignSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteCampaignResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignByCampaignIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampaignByCampaignID" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignByCampaignIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCampaignByCampaignIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExportedLeadsSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExportedLeads" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExportedLeadsSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExportedLeadsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCallDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCallDetail" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCallDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCallDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetCallHangupSoapIn">
+    <wsdl:part name="parameters" element="tns:SetCallHangup" />
+  </wsdl:message>
+  <wsdl:message name="SetCallHangupSoapOut">
+    <wsdl:part name="parameters" element="tns:SetCallHangupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsCallHangupSoapIn">
+    <wsdl:part name="parameters" element="tns:IsCallHangup" />
+  </wsdl:message>
+  <wsdl:message name="IsCallHangupSoapOut">
+    <wsdl:part name="parameters" element="tns:IsCallHangupResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddAgentToCallDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:AddAgentToCallDetail" />
+  </wsdl:message>
+  <wsdl:message name="AddAgentToCallDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:AddAgentToCallDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddVerificationAgentToCallDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:AddVerificationAgentToCallDetail" />
+  </wsdl:message>
+  <wsdl:message name="AddVerificationAgentToCallDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:AddVerificationAgentToCallDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddResultCodeToCallListSoapIn">
+    <wsdl:part name="parameters" element="tns:AddResultCodeToCallList" />
+  </wsdl:message>
+  <wsdl:message name="AddResultCodeToCallListSoapOut">
+    <wsdl:part name="parameters" element="tns:AddResultCodeToCallListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOffsiteTransferNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOffsiteTransferNumber" />
+  </wsdl:message>
+  <wsdl:message name="GetOffsiteTransferNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOffsiteTransferNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="LogSilentCallSoapIn">
+    <wsdl:part name="parameters" element="tns:LogSilentCall" />
+  </wsdl:message>
+  <wsdl:message name="LogSilentCallSoapOut">
+    <wsdl:part name="parameters" element="tns:LogSilentCallResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCallCompletionSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCallCompletion" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCallCompletionSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCallCompletionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCampaignDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCampaignDetails" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCampaignDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCampaignDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignDetailsByKeySoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampaignDetailsByKey" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignDetailsByKeySoapOut">
+    <wsdl:part name="parameters" element="tns:GetCampaignDetailsByKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetManualDailCallDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetManualDailCallDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetManualDailCallDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetManualDailCallDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetResultCodesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetResultCodes" />
+  </wsdl:message>
+  <wsdl:message name="GetResultCodesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetResultCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ResultCodeInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:ResultCodeInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="ResultCodeInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:ResultCodeInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetResultCodeByResultCodeIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetResultCodeByResultCodeID" />
+  </wsdl:message>
+  <wsdl:message name="GetResultCodeByResultCodeIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetResultCodeByResultCodeIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOtherParameterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOtherParameter" />
+  </wsdl:message>
+  <wsdl:message name="GetOtherParameterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOtherParameterResponse" />
+  </wsdl:message>
+  <wsdl:message name="OtherParameterInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:OtherParameterInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="OtherParameterInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:OtherParameterInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDialingParameterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDialingParameter" />
+  </wsdl:message>
+  <wsdl:message name="GetDialingParameterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDialingParameterResponse" />
+  </wsdl:message>
+  <wsdl:message name="DialingParameterInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:DialingParameterInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="DialingParameterInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:DialingParameterInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertDialerActivitySoapIn">
+    <wsdl:part name="parameters" element="tns:InsertDialerActivity" />
+  </wsdl:message>
+  <wsdl:message name="InsertDialerActivitySoapOut">
+    <wsdl:part name="parameters" element="tns:InsertDialerActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDialerStartSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateDialerStart" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDialerStartSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDialerStartResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDialerStopSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateDialerStop" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDialerStopSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDialerStopResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDigitalizedRecordingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDigitalizedRecording" />
+  </wsdl:message>
+  <wsdl:message name="GetDigitalizedRecordingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDigitalizedRecordingResponse" />
+  </wsdl:message>
+  <wsdl:message name="DigitalizedRecordingInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:DigitalizedRecordingInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="DigitalizedRecordingInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:DigitalizedRecordingInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignQueryStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampaignQueryStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignQueryStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCampaignQueryStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateQueryStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateQueryStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateQueryStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateQueryStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="PrepareDialerQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:PrepareDialerQuery" />
+  </wsdl:message>
+  <wsdl:message name="PrepareDialerQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:PrepareDialerQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="CampaignQueryStatusUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:CampaignQueryStatusUpdate" />
+  </wsdl:message>
+  <wsdl:message name="CampaignQueryStatusUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:CampaignQueryStatusUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="CampaignQueryStatusUpdateDialerSoapIn">
+    <wsdl:part name="parameters" element="tns:CampaignQueryStatusUpdateDialer" />
+  </wsdl:message>
+  <wsdl:message name="CampaignQueryStatusUpdateDialerSoapOut">
+    <wsdl:part name="parameters" element="tns:CampaignQueryStatusUpdateDialerResponse" />
+  </wsdl:message>
+  <wsdl:message name="CampaignQueryCompleteSoapIn">
+    <wsdl:part name="parameters" element="tns:CampaignQueryComplete" />
+  </wsdl:message>
+  <wsdl:message name="CampaignQueryCompleteSoapOut">
+    <wsdl:part name="parameters" element="tns:CampaignQueryCompleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCampaignQueryStatsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCampaignQueryStats" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCampaignQueryStatsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCampaignQueryStatsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCampaignQueryInDialerQueueSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCampaignQueryInDialerQueue" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCampaignQueryInDialerQueueSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCampaignQueryInDialerQueueResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearQueryStatsSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearQueryStats" />
+  </wsdl:message>
+  <wsdl:message name="ClearQueryStatsSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearQueryStatsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetScriptListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetScriptList" />
+  </wsdl:message>
+  <wsdl:message name="GetScriptListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetScriptListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPageListByScriptIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPageListByScriptId" />
+  </wsdl:message>
+  <wsdl:message name="GetPageListByScriptIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPageListByScriptIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetScriptByScriptIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetScriptByScriptID" />
+  </wsdl:message>
+  <wsdl:message name="GetScriptByScriptIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetScriptByScriptIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetScriptByScriptGUIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetScriptByScriptGUID" />
+  </wsdl:message>
+  <wsdl:message name="GetScriptByScriptGUIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetScriptByScriptGUIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="CloneScriptSoapIn">
+    <wsdl:part name="parameters" element="tns:CloneScript" />
+  </wsdl:message>
+  <wsdl:message name="CloneScriptSoapOut">
+    <wsdl:part name="parameters" element="tns:CloneScriptResponse" />
+  </wsdl:message>
+  <wsdl:message name="ScriptInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:ScriptInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="ScriptInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:ScriptInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteScriptSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteScript" />
+  </wsdl:message>
+  <wsdl:message name="DeleteScriptSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteScriptResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryDetailInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryDetailInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="QueryDetailInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryDetailInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetQueryListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetQueryList" />
+  </wsdl:message>
+  <wsdl:message name="GetQueryListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetQueryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetActiveQueryListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetActiveQueryList" />
+  </wsdl:message>
+  <wsdl:message name="GetActiveQueryListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetActiveQueryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStandbyQueryListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStandbyQueryList" />
+  </wsdl:message>
+  <wsdl:message name="GetStandbyQueryListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStandbyQueryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampaignData" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCampaignDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignData_Recycle_LastSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampaignData_Recycle_Last" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignData_Recycle_LastSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCampaignData_Recycle_LastResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsNeverCallSetSoapIn">
+    <wsdl:part name="parameters" element="tns:IsNeverCallSet" />
+  </wsdl:message>
+  <wsdl:message name="IsNeverCallSetSoapOut">
+    <wsdl:part name="parameters" element="tns:IsNeverCallSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAvailableCountToQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAvailableCountToQuery" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAvailableCountToQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAvailableCountToQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCampaignQueriesStatsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCampaignQueriesStats" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCampaignQueriesStatsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCampaignQueriesStatsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetQueryDetailsByQueryIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetQueryDetailsByQueryID" />
+  </wsdl:message>
+  <wsdl:message name="GetQueryDetailsByQueryIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetQueryDetailsByQueryIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteQuery" />
+  </wsdl:message>
+  <wsdl:message name="DeleteQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteQueryByNameSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteQueryByName" />
+  </wsdl:message>
+  <wsdl:message name="DeleteQueryByNameSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteQueryByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteQueryDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteQueryDetail" />
+  </wsdl:message>
+  <wsdl:message name="DeleteQueryDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteQueryDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="AreaCodeRuleInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:AreaCodeRuleInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="AreaCodeRuleInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:AreaCodeRuleInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="AreaCodeInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:AreaCodeInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="AreaCodeInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:AreaCodeInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAreaCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAreaCode" />
+  </wsdl:message>
+  <wsdl:message name="GetAreaCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAreaCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAreaCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteAreaCode" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAreaCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteAreaCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAreaCodeRuleByAgentIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAreaCodeRuleByAgentID" />
+  </wsdl:message>
+  <wsdl:message name="GetAreaCodeRuleByAgentIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAreaCodeRuleByAgentIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GlobalDialingInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:GlobalDialingInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="GlobalDialingInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:GlobalDialingInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGlobalDialingParamsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGlobalDialingParams" />
+  </wsdl:message>
+  <wsdl:message name="GetGlobalDialingParamsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGlobalDialingParamsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAgentStatSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAgentStat" />
+  </wsdl:message>
+  <wsdl:message name="GetAgentStatSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAgentStatResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAgentStatByStatIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAgentStatByStatID" />
+  </wsdl:message>
+  <wsdl:message name="GetAgentStatByStatIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAgentStatByStatIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertUpdateAgentStatSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertUpdateAgentStat" />
+  </wsdl:message>
+  <wsdl:message name="InsertUpdateAgentStatSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertUpdateAgentStatResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAgentStatsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAgentStats" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAgentStatsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAgentStatsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAgentStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAgentStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAgentStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAgentStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignFieldsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampaignFields" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignFieldsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCampaignFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampaignStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCampaignStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFieldTypesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFieldTypes" />
+  </wsdl:message>
+  <wsdl:message name="GetFieldTypesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFieldTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CampaignFieldsInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:CampaignFieldsInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="CampaignFieldsInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:CampaignFieldsInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCampaignFieldSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteCampaignField" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCampaignFieldSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteCampaignFieldResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CampaignServiceSoap">
+    <wsdl:operation name="InsertUpdateScheduledCampaign">
+      <wsdl:input message="tns:InsertUpdateScheduledCampaignSoapIn" />
+      <wsdl:output message="tns:InsertUpdateScheduledCampaignSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignSchedule">
+      <wsdl:input message="tns:UpdateCampaignScheduleSoapIn" />
+      <wsdl:output message="tns:UpdateCampaignScheduleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoneLinesInUseCount">
+      <wsdl:input message="tns:GetPhoneLinesInUseCountSoapIn" />
+      <wsdl:output message="tns:GetPhoneLinesInUseCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckCampaignTransferCall">
+      <wsdl:input message="tns:CheckCampaignTransferCallSoapIn" />
+      <wsdl:output message="tns:CheckCampaignTransferCallSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitAdminRequest">
+      <wsdl:input message="tns:SubmitAdminRequestSoapIn" />
+      <wsdl:output message="tns:SubmitAdminRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdminRequests">
+      <wsdl:input message="tns:GetAdminRequestsSoapIn" />
+      <wsdl:output message="tns:GetAdminRequestsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAdminRequestStatus">
+      <wsdl:input message="tns:UpdateAdminRequestStatusSoapIn" />
+      <wsdl:output message="tns:UpdateAdminRequestStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingScheme">
+      <wsdl:input message="tns:GetTrainingSchemeSoapIn" />
+      <wsdl:output message="tns:GetTrainingSchemeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingPageList">
+      <wsdl:input message="tns:GetTrainingPageListSoapIn" />
+      <wsdl:output message="tns:GetTrainingPageListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingSchemeList">
+      <wsdl:input message="tns:GetTrainingSchemeListSoapIn" />
+      <wsdl:output message="tns:GetTrainingSchemeListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActiveTrainingScheme">
+      <wsdl:input message="tns:UpdateActiveTrainingSchemeSoapIn" />
+      <wsdl:output message="tns:UpdateActiveTrainingSchemeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTrainingScheme">
+      <wsdl:input message="tns:DeleteTrainingSchemeSoapIn" />
+      <wsdl:output message="tns:DeleteTrainingSchemeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTrainingScheme">
+      <wsdl:input message="tns:AddTrainingSchemeSoapIn" />
+      <wsdl:output message="tns:AddTrainingSchemeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingPage">
+      <wsdl:input message="tns:GetTrainingPageSoapIn" />
+      <wsdl:output message="tns:GetTrainingPageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrainingPageInsertUpdate">
+      <wsdl:input message="tns:TrainingPageInsertUpdateSoapIn" />
+      <wsdl:output message="tns:TrainingPageInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveTrainingPageList">
+      <wsdl:input message="tns:GetActiveTrainingPageListSoapIn" />
+      <wsdl:output message="tns:GetActiveTrainingPageListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CampaignInsertUpdate">
+      <wsdl:input message="tns:CampaignInsertUpdateSoapIn" />
+      <wsdl:output message="tns:CampaignInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ScrubDNC">
+      <wsdl:input message="tns:ScrubDNCSoapIn" />
+      <wsdl:output message="tns:ScrubDNCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CampaignClone">
+      <wsdl:input message="tns:CampaignCloneSoapIn" />
+      <wsdl:output message="tns:CampaignCloneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CampaignStatusUpdate">
+      <wsdl:input message="tns:CampaignStatusUpdateSoapIn" />
+      <wsdl:output message="tns:CampaignStatusUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ResetCampaignsToIdle">
+      <wsdl:input message="tns:ResetCampaignsToIdleSoapIn" />
+      <wsdl:output message="tns:ResetCampaignsToIdleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShutdownAllCampaigns">
+      <wsdl:input message="tns:ShutdownAllCampaignsSoapIn" />
+      <wsdl:output message="tns:ShutdownAllCampaignsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignActiveDialCount">
+      <wsdl:input message="tns:GetCampaignActiveDialCountSoapIn" />
+      <wsdl:output message="tns:GetCampaignActiveDialCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CampaignDialStatusUpdate">
+      <wsdl:input message="tns:CampaignDialStatusUpdateSoapIn" />
+      <wsdl:output message="tns:CampaignDialStatusUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignList">
+      <wsdl:input message="tns:GetCampaignListSoapIn" />
+      <wsdl:output message="tns:GetCampaignListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveCampaignList">
+      <wsdl:input message="tns:GetActiveCampaignListSoapIn" />
+      <wsdl:output message="tns:GetActiveCampaignListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignScoreBoardData">
+      <wsdl:input message="tns:GetCampaignScoreBoardDataSoapIn" />
+      <wsdl:output message="tns:GetCampaignScoreBoardDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCampaign">
+      <wsdl:input message="tns:DeleteCampaignSoapIn" />
+      <wsdl:output message="tns:DeleteCampaignSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignByCampaignID">
+      <wsdl:input message="tns:GetCampaignByCampaignIDSoapIn" />
+      <wsdl:output message="tns:GetCampaignByCampaignIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExportedLeads">
+      <wsdl:input message="tns:DeleteExportedLeadsSoapIn" />
+      <wsdl:output message="tns:DeleteExportedLeadsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCallDetail">
+      <wsdl:input message="tns:UpdateCallDetailSoapIn" />
+      <wsdl:output message="tns:UpdateCallDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetCallHangup">
+      <wsdl:input message="tns:SetCallHangupSoapIn" />
+      <wsdl:output message="tns:SetCallHangupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsCallHangup">
+      <wsdl:input message="tns:IsCallHangupSoapIn" />
+      <wsdl:output message="tns:IsCallHangupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAgentToCallDetail">
+      <wsdl:input message="tns:AddAgentToCallDetailSoapIn" />
+      <wsdl:output message="tns:AddAgentToCallDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddVerificationAgentToCallDetail">
+      <wsdl:input message="tns:AddVerificationAgentToCallDetailSoapIn" />
+      <wsdl:output message="tns:AddVerificationAgentToCallDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddResultCodeToCallList">
+      <wsdl:input message="tns:AddResultCodeToCallListSoapIn" />
+      <wsdl:output message="tns:AddResultCodeToCallListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOffsiteTransferNumber">
+      <wsdl:input message="tns:GetOffsiteTransferNumberSoapIn" />
+      <wsdl:output message="tns:GetOffsiteTransferNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LogSilentCall">
+      <wsdl:input message="tns:LogSilentCallSoapIn" />
+      <wsdl:output message="tns:LogSilentCallSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCallCompletion">
+      <wsdl:input message="tns:UpdateCallCompletionSoapIn" />
+      <wsdl:output message="tns:UpdateCallCompletionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignDetails">
+      <wsdl:input message="tns:UpdateCampaignDetailsSoapIn" />
+      <wsdl:output message="tns:UpdateCampaignDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignDetailsByKey">
+      <wsdl:input message="tns:GetCampaignDetailsByKeySoapIn" />
+      <wsdl:output message="tns:GetCampaignDetailsByKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetManualDailCallDetails">
+      <wsdl:input message="tns:GetManualDailCallDetailsSoapIn" />
+      <wsdl:output message="tns:GetManualDailCallDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResultCodes">
+      <wsdl:input message="tns:GetResultCodesSoapIn" />
+      <wsdl:output message="tns:GetResultCodesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ResultCodeInsertUpdate">
+      <wsdl:input message="tns:ResultCodeInsertUpdateSoapIn" />
+      <wsdl:output message="tns:ResultCodeInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResultCodeByResultCodeID">
+      <wsdl:input message="tns:GetResultCodeByResultCodeIDSoapIn" />
+      <wsdl:output message="tns:GetResultCodeByResultCodeIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOtherParameter">
+      <wsdl:input message="tns:GetOtherParameterSoapIn" />
+      <wsdl:output message="tns:GetOtherParameterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OtherParameterInsertUpdate">
+      <wsdl:input message="tns:OtherParameterInsertUpdateSoapIn" />
+      <wsdl:output message="tns:OtherParameterInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDialingParameter">
+      <wsdl:input message="tns:GetDialingParameterSoapIn" />
+      <wsdl:output message="tns:GetDialingParameterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DialingParameterInsertUpdate">
+      <wsdl:input message="tns:DialingParameterInsertUpdateSoapIn" />
+      <wsdl:output message="tns:DialingParameterInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDialerActivity">
+      <wsdl:input message="tns:InsertDialerActivitySoapIn" />
+      <wsdl:output message="tns:InsertDialerActivitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDialerStart">
+      <wsdl:input message="tns:UpdateDialerStartSoapIn" />
+      <wsdl:output message="tns:UpdateDialerStartSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDialerStop">
+      <wsdl:input message="tns:UpdateDialerStopSoapIn" />
+      <wsdl:output message="tns:UpdateDialerStopSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDigitalizedRecording">
+      <wsdl:input message="tns:GetDigitalizedRecordingSoapIn" />
+      <wsdl:output message="tns:GetDigitalizedRecordingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DigitalizedRecordingInsertUpdate">
+      <wsdl:input message="tns:DigitalizedRecordingInsertUpdateSoapIn" />
+      <wsdl:output message="tns:DigitalizedRecordingInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignQueryStatus">
+      <wsdl:input message="tns:GetCampaignQueryStatusSoapIn" />
+      <wsdl:output message="tns:GetCampaignQueryStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateQueryStatus">
+      <wsdl:input message="tns:UpdateQueryStatusSoapIn" />
+      <wsdl:output message="tns:UpdateQueryStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PrepareDialerQuery">
+      <wsdl:input message="tns:PrepareDialerQuerySoapIn" />
+      <wsdl:output message="tns:PrepareDialerQuerySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CampaignQueryStatusUpdate">
+      <wsdl:input message="tns:CampaignQueryStatusUpdateSoapIn" />
+      <wsdl:output message="tns:CampaignQueryStatusUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CampaignQueryStatusUpdateDialer">
+      <wsdl:input message="tns:CampaignQueryStatusUpdateDialerSoapIn" />
+      <wsdl:output message="tns:CampaignQueryStatusUpdateDialerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CampaignQueryComplete">
+      <wsdl:input message="tns:CampaignQueryCompleteSoapIn" />
+      <wsdl:output message="tns:CampaignQueryCompleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignQueryStats">
+      <wsdl:input message="tns:UpdateCampaignQueryStatsSoapIn" />
+      <wsdl:output message="tns:UpdateCampaignQueryStatsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignQueryInDialerQueue">
+      <wsdl:input message="tns:UpdateCampaignQueryInDialerQueueSoapIn" />
+      <wsdl:output message="tns:UpdateCampaignQueryInDialerQueueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearQueryStats">
+      <wsdl:input message="tns:ClearQueryStatsSoapIn" />
+      <wsdl:output message="tns:ClearQueryStatsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScriptList">
+      <wsdl:input message="tns:GetScriptListSoapIn" />
+      <wsdl:output message="tns:GetScriptListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPageListByScriptId">
+      <wsdl:input message="tns:GetPageListByScriptIdSoapIn" />
+      <wsdl:output message="tns:GetPageListByScriptIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScriptByScriptID">
+      <wsdl:input message="tns:GetScriptByScriptIDSoapIn" />
+      <wsdl:output message="tns:GetScriptByScriptIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScriptByScriptGUID">
+      <wsdl:input message="tns:GetScriptByScriptGUIDSoapIn" />
+      <wsdl:output message="tns:GetScriptByScriptGUIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CloneScript">
+      <wsdl:input message="tns:CloneScriptSoapIn" />
+      <wsdl:output message="tns:CloneScriptSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ScriptInsertUpdate">
+      <wsdl:input message="tns:ScriptInsertUpdateSoapIn" />
+      <wsdl:output message="tns:ScriptInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteScript">
+      <wsdl:input message="tns:DeleteScriptSoapIn" />
+      <wsdl:output message="tns:DeleteScriptSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryDetailInsertUpdate">
+      <wsdl:input message="tns:QueryDetailInsertUpdateSoapIn" />
+      <wsdl:output message="tns:QueryDetailInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryList">
+      <wsdl:input message="tns:GetQueryListSoapIn" />
+      <wsdl:output message="tns:GetQueryListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveQueryList">
+      <wsdl:input message="tns:GetActiveQueryListSoapIn" />
+      <wsdl:output message="tns:GetActiveQueryListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStandbyQueryList">
+      <wsdl:input message="tns:GetStandbyQueryListSoapIn" />
+      <wsdl:output message="tns:GetStandbyQueryListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignData">
+      <wsdl:input message="tns:GetCampaignDataSoapIn" />
+      <wsdl:output message="tns:GetCampaignDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignData_Recycle_Last">
+      <wsdl:input message="tns:GetCampaignData_Recycle_LastSoapIn" />
+      <wsdl:output message="tns:GetCampaignData_Recycle_LastSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsNeverCallSet">
+      <wsdl:input message="tns:IsNeverCallSetSoapIn" />
+      <wsdl:output message="tns:IsNeverCallSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAvailableCountToQuery">
+      <wsdl:input message="tns:UpdateAvailableCountToQuerySoapIn" />
+      <wsdl:output message="tns:UpdateAvailableCountToQuerySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignQueriesStats">
+      <wsdl:input message="tns:UpdateCampaignQueriesStatsSoapIn" />
+      <wsdl:output message="tns:UpdateCampaignQueriesStatsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryDetailsByQueryID">
+      <wsdl:input message="tns:GetQueryDetailsByQueryIDSoapIn" />
+      <wsdl:output message="tns:GetQueryDetailsByQueryIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteQuery">
+      <wsdl:input message="tns:DeleteQuerySoapIn" />
+      <wsdl:output message="tns:DeleteQuerySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteQueryByName">
+      <wsdl:input message="tns:DeleteQueryByNameSoapIn" />
+      <wsdl:output message="tns:DeleteQueryByNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteQueryDetail">
+      <wsdl:input message="tns:DeleteQueryDetailSoapIn" />
+      <wsdl:output message="tns:DeleteQueryDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AreaCodeRuleInsertUpdate">
+      <wsdl:input message="tns:AreaCodeRuleInsertUpdateSoapIn" />
+      <wsdl:output message="tns:AreaCodeRuleInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AreaCodeInsertUpdate">
+      <wsdl:input message="tns:AreaCodeInsertUpdateSoapIn" />
+      <wsdl:output message="tns:AreaCodeInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAreaCode">
+      <wsdl:input message="tns:GetAreaCodeSoapIn" />
+      <wsdl:output message="tns:GetAreaCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAreaCode">
+      <wsdl:input message="tns:DeleteAreaCodeSoapIn" />
+      <wsdl:output message="tns:DeleteAreaCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAreaCodeRuleByAgentID">
+      <wsdl:input message="tns:GetAreaCodeRuleByAgentIDSoapIn" />
+      <wsdl:output message="tns:GetAreaCodeRuleByAgentIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GlobalDialingInsertUpdate">
+      <wsdl:input message="tns:GlobalDialingInsertUpdateSoapIn" />
+      <wsdl:output message="tns:GlobalDialingInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGlobalDialingParams">
+      <wsdl:input message="tns:GetGlobalDialingParamsSoapIn" />
+      <wsdl:output message="tns:GetGlobalDialingParamsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentStat">
+      <wsdl:input message="tns:GetAgentStatSoapIn" />
+      <wsdl:output message="tns:GetAgentStatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentStatByStatID">
+      <wsdl:input message="tns:GetAgentStatByStatIDSoapIn" />
+      <wsdl:output message="tns:GetAgentStatByStatIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateAgentStat">
+      <wsdl:input message="tns:InsertUpdateAgentStatSoapIn" />
+      <wsdl:output message="tns:InsertUpdateAgentStatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAgentStats">
+      <wsdl:input message="tns:UpdateAgentStatsSoapIn" />
+      <wsdl:output message="tns:UpdateAgentStatsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAgentStatus">
+      <wsdl:input message="tns:UpdateAgentStatusSoapIn" />
+      <wsdl:output message="tns:UpdateAgentStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignFields">
+      <wsdl:input message="tns:GetCampaignFieldsSoapIn" />
+      <wsdl:output message="tns:GetCampaignFieldsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignStatus">
+      <wsdl:input message="tns:GetCampaignStatusSoapIn" />
+      <wsdl:output message="tns:GetCampaignStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldTypes">
+      <wsdl:input message="tns:GetFieldTypesSoapIn" />
+      <wsdl:output message="tns:GetFieldTypesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CampaignFieldsInsertUpdate">
+      <wsdl:input message="tns:CampaignFieldsInsertUpdateSoapIn" />
+      <wsdl:output message="tns:CampaignFieldsInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCampaignField">
+      <wsdl:input message="tns:DeleteCampaignFieldSoapIn" />
+      <wsdl:output message="tns:DeleteCampaignFieldSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CampaignServiceSoap" type="tns:CampaignServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertUpdateScheduledCampaign">
+      <soap:operation soapAction="http://tempuri.org/InsertUpdateScheduledCampaign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignSchedule">
+      <soap:operation soapAction="http://tempuri.org/UpdateCampaignSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoneLinesInUseCount">
+      <soap:operation soapAction="http://tempuri.org/GetPhoneLinesInUseCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckCampaignTransferCall">
+      <soap:operation soapAction="http://tempuri.org/CheckCampaignTransferCall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitAdminRequest">
+      <soap:operation soapAction="http://tempuri.org/SubmitAdminRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdminRequests">
+      <soap:operation soapAction="http://tempuri.org/GetAdminRequests" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAdminRequestStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateAdminRequestStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingScheme">
+      <soap:operation soapAction="http://tempuri.org/GetTrainingScheme" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingPageList">
+      <soap:operation soapAction="http://tempuri.org/GetTrainingPageList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingSchemeList">
+      <soap:operation soapAction="http://tempuri.org/GetTrainingSchemeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActiveTrainingScheme">
+      <soap:operation soapAction="http://tempuri.org/UpdateActiveTrainingScheme" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTrainingScheme">
+      <soap:operation soapAction="http://tempuri.org/DeleteTrainingScheme" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTrainingScheme">
+      <soap:operation soapAction="http://tempuri.org/AddTrainingScheme" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingPage">
+      <soap:operation soapAction="http://tempuri.org/GetTrainingPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrainingPageInsertUpdate">
+      <soap:operation soapAction="http://tempuri.org/TrainingPageInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveTrainingPageList">
+      <soap:operation soapAction="http://tempuri.org/GetActiveTrainingPageList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CampaignInsertUpdate">
+      <soap:operation soapAction="http://tempuri.org/CampaignInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScrubDNC">
+      <soap:operation soapAction="http://tempuri.org/ScrubDNC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CampaignClone">
+      <soap:operation soapAction="http://tempuri.org/CampaignClone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CampaignStatusUpdate">
+      <soap:operation soapAction="http://tempuri.org/CampaignStatusUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResetCampaignsToIdle">
+      <soap:operation soapAction="http://tempuri.org/ResetCampaignsToIdle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShutdownAllCampaigns">
+      <soap:operation soapAction="http://tempuri.org/ShutdownAllCampaigns" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignActiveDialCount">
+      <soap:operation soapAction="http://tempuri.org/GetCampaignActiveDialCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CampaignDialStatusUpdate">
+      <soap:operation soapAction="http://tempuri.org/CampaignDialStatusUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignList">
+      <soap:operation soapAction="http://tempuri.org/GetCampaignList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveCampaignList">
+      <soap:operation soapAction="http://tempuri.org/GetActiveCampaignList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignScoreBoardData">
+      <soap:operation soapAction="http://tempuri.org/GetCampaignScoreBoardData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCampaign">
+      <soap:operation soapAction="http://tempuri.org/DeleteCampaign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignByCampaignID">
+      <soap:operation soapAction="http://tempuri.org/GetCampaignByCampaignID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExportedLeads">
+      <soap:operation soapAction="http://tempuri.org/DeleteExportedLeads" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCallDetail">
+      <soap:operation soapAction="http://tempuri.org/UpdateCallDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetCallHangup">
+      <soap:operation soapAction="http://tempuri.org/SetCallHangup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsCallHangup">
+      <soap:operation soapAction="http://tempuri.org/IsCallHangup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAgentToCallDetail">
+      <soap:operation soapAction="http://tempuri.org/AddAgentToCallDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddVerificationAgentToCallDetail">
+      <soap:operation soapAction="http://tempuri.org/AddVerificationAgentToCallDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddResultCodeToCallList">
+      <soap:operation soapAction="http://tempuri.org/AddResultCodeToCallList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOffsiteTransferNumber">
+      <soap:operation soapAction="http://tempuri.org/GetOffsiteTransferNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogSilentCall">
+      <soap:operation soapAction="http://tempuri.org/LogSilentCall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCallCompletion">
+      <soap:operation soapAction="http://tempuri.org/UpdateCallCompletion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignDetails">
+      <soap:operation soapAction="http://tempuri.org/UpdateCampaignDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignDetailsByKey">
+      <soap:operation soapAction="http://tempuri.org/GetCampaignDetailsByKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetManualDailCallDetails">
+      <soap:operation soapAction="http://tempuri.org/GetManualDailCallDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResultCodes">
+      <soap:operation soapAction="http://tempuri.org/GetResultCodes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResultCodeInsertUpdate">
+      <soap:operation soapAction="http://tempuri.org/ResultCodeInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResultCodeByResultCodeID">
+      <soap:operation soapAction="http://tempuri.org/GetResultCodeByResultCodeID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOtherParameter">
+      <soap:operation soapAction="http://tempuri.org/GetOtherParameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OtherParameterInsertUpdate">
+      <soap:operation soapAction="http://tempuri.org/OtherParameterInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDialingParameter">
+      <soap:operation soapAction="http://tempuri.org/GetDialingParameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DialingParameterInsertUpdate">
+      <soap:operation soapAction="http://tempuri.org/DialingParameterInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDialerActivity">
+      <soap:operation soapAction="http://tempuri.org/InsertDialerActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDialerStart">
+      <soap:operation soapAction="http://tempuri.org/UpdateDialerStart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDialerStop">
+      <soap:operation soapAction="http://tempuri.org/UpdateDialerStop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDigitalizedRecording">
+      <soap:operation soapAction="http://tempuri.org/GetDigitalizedRecording" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DigitalizedRecordingInsertUpdate">
+      <soap:operation soapAction="http://tempuri.org/DigitalizedRecordingInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignQueryStatus">
+      <soap:operation soapAction="http://tempuri.org/GetCampaignQueryStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateQueryStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateQueryStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrepareDialerQuery">
+      <soap:operation soapAction="http://tempuri.org/PrepareDialerQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CampaignQueryStatusUpdate">
+      <soap:operation soapAction="http://tempuri.org/CampaignQueryStatusUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CampaignQueryStatusUpdateDialer">
+      <soap:operation soapAction="http://tempuri.org/CampaignQueryStatusUpdateDialer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CampaignQueryComplete">
+      <soap:operation soapAction="http://tempuri.org/CampaignQueryComplete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignQueryStats">
+      <soap:operation soapAction="http://tempuri.org/UpdateCampaignQueryStats" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignQueryInDialerQueue">
+      <soap:operation soapAction="http://tempuri.org/UpdateCampaignQueryInDialerQueue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearQueryStats">
+      <soap:operation soapAction="http://tempuri.org/ClearQueryStats" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScriptList">
+      <soap:operation soapAction="http://tempuri.org/GetScriptList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPageListByScriptId">
+      <soap:operation soapAction="http://tempuri.org/GetPageListByScriptId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScriptByScriptID">
+      <soap:operation soapAction="http://tempuri.org/GetScriptByScriptID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScriptByScriptGUID">
+      <soap:operation soapAction="http://tempuri.org/GetScriptByScriptGUID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloneScript">
+      <soap:operation soapAction="http://tempuri.org/CloneScript" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScriptInsertUpdate">
+      <soap:operation soapAction="http://tempuri.org/ScriptInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteScript">
+      <soap:operation soapAction="http://tempuri.org/DeleteScript" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryDetailInsertUpdate">
+      <soap:operation soapAction="http://tempuri.org/QueryDetailInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryList">
+      <soap:operation soapAction="http://tempuri.org/GetQueryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveQueryList">
+      <soap:operation soapAction="http://tempuri.org/GetActiveQueryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStandbyQueryList">
+      <soap:operation soapAction="http://tempuri.org/GetStandbyQueryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignData">
+      <soap:operation soapAction="http://tempuri.org/GetCampaignData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignData_Recycle_Last">
+      <soap:operation soapAction="http://tempuri.org/GetCampaignData_Recycle_Last" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsNeverCallSet">
+      <soap:operation soapAction="http://tempuri.org/IsNeverCallSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAvailableCountToQuery">
+      <soap:operation soapAction="http://tempuri.org/UpdateAvailableCountToQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignQueriesStats">
+      <soap:operation soapAction="http://tempuri.org/UpdateCampaignQueriesStats" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryDetailsByQueryID">
+      <soap:operation soapAction="http://tempuri.org/GetQueryDetailsByQueryID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteQuery">
+      <soap:operation soapAction="http://tempuri.org/DeleteQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteQueryByName">
+      <soap:operation soapAction="http://tempuri.org/DeleteQueryByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteQueryDetail">
+      <soap:operation soapAction="http://tempuri.org/DeleteQueryDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AreaCodeRuleInsertUpdate">
+      <soap:operation soapAction="http://tempuri.org/AreaCodeRuleInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AreaCodeInsertUpdate">
+      <soap:operation soapAction="http://tempuri.org/AreaCodeInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAreaCode">
+      <soap:operation soapAction="http://tempuri.org/GetAreaCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAreaCode">
+      <soap:operation soapAction="http://tempuri.org/DeleteAreaCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAreaCodeRuleByAgentID">
+      <soap:operation soapAction="http://tempuri.org/GetAreaCodeRuleByAgentID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GlobalDialingInsertUpdate">
+      <soap:operation soapAction="http://tempuri.org/GlobalDialingInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGlobalDialingParams">
+      <soap:operation soapAction="http://tempuri.org/GetGlobalDialingParams" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentStat">
+      <soap:operation soapAction="http://tempuri.org/GetAgentStat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentStatByStatID">
+      <soap:operation soapAction="http://tempuri.org/GetAgentStatByStatID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateAgentStat">
+      <soap:operation soapAction="http://tempuri.org/InsertUpdateAgentStat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAgentStats">
+      <soap:operation soapAction="http://tempuri.org/UpdateAgentStats" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAgentStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateAgentStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignFields">
+      <soap:operation soapAction="http://tempuri.org/GetCampaignFields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignStatus">
+      <soap:operation soapAction="http://tempuri.org/GetCampaignStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldTypes">
+      <soap:operation soapAction="http://tempuri.org/GetFieldTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CampaignFieldsInsertUpdate">
+      <soap:operation soapAction="http://tempuri.org/CampaignFieldsInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCampaignField">
+      <soap:operation soapAction="http://tempuri.org/DeleteCampaignField" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CampaignServiceSoap12" type="tns:CampaignServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertUpdateScheduledCampaign">
+      <soap12:operation soapAction="http://tempuri.org/InsertUpdateScheduledCampaign" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignSchedule">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCampaignSchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoneLinesInUseCount">
+      <soap12:operation soapAction="http://tempuri.org/GetPhoneLinesInUseCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckCampaignTransferCall">
+      <soap12:operation soapAction="http://tempuri.org/CheckCampaignTransferCall" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitAdminRequest">
+      <soap12:operation soapAction="http://tempuri.org/SubmitAdminRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdminRequests">
+      <soap12:operation soapAction="http://tempuri.org/GetAdminRequests" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAdminRequestStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateAdminRequestStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingScheme">
+      <soap12:operation soapAction="http://tempuri.org/GetTrainingScheme" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingPageList">
+      <soap12:operation soapAction="http://tempuri.org/GetTrainingPageList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingSchemeList">
+      <soap12:operation soapAction="http://tempuri.org/GetTrainingSchemeList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActiveTrainingScheme">
+      <soap12:operation soapAction="http://tempuri.org/UpdateActiveTrainingScheme" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTrainingScheme">
+      <soap12:operation soapAction="http://tempuri.org/DeleteTrainingScheme" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTrainingScheme">
+      <soap12:operation soapAction="http://tempuri.org/AddTrainingScheme" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingPage">
+      <soap12:operation soapAction="http://tempuri.org/GetTrainingPage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrainingPageInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/TrainingPageInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveTrainingPageList">
+      <soap12:operation soapAction="http://tempuri.org/GetActiveTrainingPageList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CampaignInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/CampaignInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScrubDNC">
+      <soap12:operation soapAction="http://tempuri.org/ScrubDNC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CampaignClone">
+      <soap12:operation soapAction="http://tempuri.org/CampaignClone" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CampaignStatusUpdate">
+      <soap12:operation soapAction="http://tempuri.org/CampaignStatusUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResetCampaignsToIdle">
+      <soap12:operation soapAction="http://tempuri.org/ResetCampaignsToIdle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShutdownAllCampaigns">
+      <soap12:operation soapAction="http://tempuri.org/ShutdownAllCampaigns" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignActiveDialCount">
+      <soap12:operation soapAction="http://tempuri.org/GetCampaignActiveDialCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CampaignDialStatusUpdate">
+      <soap12:operation soapAction="http://tempuri.org/CampaignDialStatusUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignList">
+      <soap12:operation soapAction="http://tempuri.org/GetCampaignList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveCampaignList">
+      <soap12:operation soapAction="http://tempuri.org/GetActiveCampaignList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignScoreBoardData">
+      <soap12:operation soapAction="http://tempuri.org/GetCampaignScoreBoardData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCampaign">
+      <soap12:operation soapAction="http://tempuri.org/DeleteCampaign" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignByCampaignID">
+      <soap12:operation soapAction="http://tempuri.org/GetCampaignByCampaignID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExportedLeads">
+      <soap12:operation soapAction="http://tempuri.org/DeleteExportedLeads" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCallDetail">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCallDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetCallHangup">
+      <soap12:operation soapAction="http://tempuri.org/SetCallHangup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsCallHangup">
+      <soap12:operation soapAction="http://tempuri.org/IsCallHangup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAgentToCallDetail">
+      <soap12:operation soapAction="http://tempuri.org/AddAgentToCallDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddVerificationAgentToCallDetail">
+      <soap12:operation soapAction="http://tempuri.org/AddVerificationAgentToCallDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddResultCodeToCallList">
+      <soap12:operation soapAction="http://tempuri.org/AddResultCodeToCallList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOffsiteTransferNumber">
+      <soap12:operation soapAction="http://tempuri.org/GetOffsiteTransferNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogSilentCall">
+      <soap12:operation soapAction="http://tempuri.org/LogSilentCall" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCallCompletion">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCallCompletion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignDetails">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCampaignDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignDetailsByKey">
+      <soap12:operation soapAction="http://tempuri.org/GetCampaignDetailsByKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetManualDailCallDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetManualDailCallDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResultCodes">
+      <soap12:operation soapAction="http://tempuri.org/GetResultCodes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResultCodeInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/ResultCodeInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResultCodeByResultCodeID">
+      <soap12:operation soapAction="http://tempuri.org/GetResultCodeByResultCodeID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOtherParameter">
+      <soap12:operation soapAction="http://tempuri.org/GetOtherParameter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OtherParameterInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/OtherParameterInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDialingParameter">
+      <soap12:operation soapAction="http://tempuri.org/GetDialingParameter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DialingParameterInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/DialingParameterInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDialerActivity">
+      <soap12:operation soapAction="http://tempuri.org/InsertDialerActivity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDialerStart">
+      <soap12:operation soapAction="http://tempuri.org/UpdateDialerStart" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDialerStop">
+      <soap12:operation soapAction="http://tempuri.org/UpdateDialerStop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDigitalizedRecording">
+      <soap12:operation soapAction="http://tempuri.org/GetDigitalizedRecording" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DigitalizedRecordingInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/DigitalizedRecordingInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignQueryStatus">
+      <soap12:operation soapAction="http://tempuri.org/GetCampaignQueryStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateQueryStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateQueryStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrepareDialerQuery">
+      <soap12:operation soapAction="http://tempuri.org/PrepareDialerQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CampaignQueryStatusUpdate">
+      <soap12:operation soapAction="http://tempuri.org/CampaignQueryStatusUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CampaignQueryStatusUpdateDialer">
+      <soap12:operation soapAction="http://tempuri.org/CampaignQueryStatusUpdateDialer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CampaignQueryComplete">
+      <soap12:operation soapAction="http://tempuri.org/CampaignQueryComplete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignQueryStats">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCampaignQueryStats" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignQueryInDialerQueue">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCampaignQueryInDialerQueue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearQueryStats">
+      <soap12:operation soapAction="http://tempuri.org/ClearQueryStats" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScriptList">
+      <soap12:operation soapAction="http://tempuri.org/GetScriptList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPageListByScriptId">
+      <soap12:operation soapAction="http://tempuri.org/GetPageListByScriptId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScriptByScriptID">
+      <soap12:operation soapAction="http://tempuri.org/GetScriptByScriptID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScriptByScriptGUID">
+      <soap12:operation soapAction="http://tempuri.org/GetScriptByScriptGUID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloneScript">
+      <soap12:operation soapAction="http://tempuri.org/CloneScript" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScriptInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/ScriptInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteScript">
+      <soap12:operation soapAction="http://tempuri.org/DeleteScript" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryDetailInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/QueryDetailInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryList">
+      <soap12:operation soapAction="http://tempuri.org/GetQueryList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveQueryList">
+      <soap12:operation soapAction="http://tempuri.org/GetActiveQueryList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStandbyQueryList">
+      <soap12:operation soapAction="http://tempuri.org/GetStandbyQueryList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignData">
+      <soap12:operation soapAction="http://tempuri.org/GetCampaignData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignData_Recycle_Last">
+      <soap12:operation soapAction="http://tempuri.org/GetCampaignData_Recycle_Last" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsNeverCallSet">
+      <soap12:operation soapAction="http://tempuri.org/IsNeverCallSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAvailableCountToQuery">
+      <soap12:operation soapAction="http://tempuri.org/UpdateAvailableCountToQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignQueriesStats">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCampaignQueriesStats" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryDetailsByQueryID">
+      <soap12:operation soapAction="http://tempuri.org/GetQueryDetailsByQueryID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteQuery">
+      <soap12:operation soapAction="http://tempuri.org/DeleteQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteQueryByName">
+      <soap12:operation soapAction="http://tempuri.org/DeleteQueryByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteQueryDetail">
+      <soap12:operation soapAction="http://tempuri.org/DeleteQueryDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AreaCodeRuleInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/AreaCodeRuleInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AreaCodeInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/AreaCodeInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAreaCode">
+      <soap12:operation soapAction="http://tempuri.org/GetAreaCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAreaCode">
+      <soap12:operation soapAction="http://tempuri.org/DeleteAreaCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAreaCodeRuleByAgentID">
+      <soap12:operation soapAction="http://tempuri.org/GetAreaCodeRuleByAgentID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GlobalDialingInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/GlobalDialingInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGlobalDialingParams">
+      <soap12:operation soapAction="http://tempuri.org/GetGlobalDialingParams" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentStat">
+      <soap12:operation soapAction="http://tempuri.org/GetAgentStat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentStatByStatID">
+      <soap12:operation soapAction="http://tempuri.org/GetAgentStatByStatID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateAgentStat">
+      <soap12:operation soapAction="http://tempuri.org/InsertUpdateAgentStat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAgentStats">
+      <soap12:operation soapAction="http://tempuri.org/UpdateAgentStats" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAgentStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateAgentStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignFields">
+      <soap12:operation soapAction="http://tempuri.org/GetCampaignFields" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignStatus">
+      <soap12:operation soapAction="http://tempuri.org/GetCampaignStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldTypes">
+      <soap12:operation soapAction="http://tempuri.org/GetFieldTypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CampaignFieldsInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/CampaignFieldsInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCampaignField">
+      <soap12:operation soapAction="http://tempuri.org/DeleteCampaignField" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CampaignService">
+    <wsdl:port name="CampaignServiceSoap" binding="tns:CampaignServiceSoap">
+      <soap:address location="http://localhost/RainmakerWS/CampaignService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CampaignServiceSoap12" binding="tns:CampaignServiceSoap12">
+      <soap12:address location="http://localhost/RainmakerWS/CampaignService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

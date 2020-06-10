@@ -1,0 +1,14 @@
+using System;
+
+namespace Rainmaker.Reports 
+	{
+	public enum ReportType 
+		{ 
+		SHIFT_REPORT,
+		CALL_HISTORY_BY_PHONE_REPORT,
+		QUERY_REPORT,
+		SUMMARIZED_RESULTS_REPORT,
+		AGENTS_DIALER_RESULTS_REPORT,
+		CALL_HISTORY_BY_AGENT_REPORT
+		};
+	}

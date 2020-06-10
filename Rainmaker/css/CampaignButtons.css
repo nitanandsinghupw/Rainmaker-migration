@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Likno Web Button Maker sample page</title>
+<style type="text/css">
+.liknobtn
+{
+	display:block;
+	width:200px;
+	height:20px;
+	margin:0;
+	padding:0;
+}
+.liknobtn1
+{
+	background: url("Recordings.gif") 0 0 no-repeat;
+}
+.liknobtn2
+{
+	background: url("Queries.gif") 0 0 no-repeat;
+}
+.liknobtn3
+{
+	background: url("Other_Parameters.gif") 0 0 no-repeat;
+}
+.liknobtn4
+{
+	background: url("Import_Phone_Numbers.gif") 0 0 no-repeat;
+}
+.liknobtn5
+{
+	background: url("Fields_Manager.gif") 0 0 no-repeat;
+}
+.liknobtn6
+{
+	background: url("Dialing_Parameters.gif") 0 0 no-repeat;
+}
+.liknobtn7
+{
+	background: url("Campaign_Scripts.gif") 0 0 no-repeat;
+}
+.liknobtn8
+{
+	background: url("Agent_Status.gif") 0 0 no-repeat;
+}
+.liknobtn9
+{
+	background: url("Result_Codes.gif") 0 0 no-repeat;
+}
+</style>
+</head>
+<body>
+<div class="liknobtn liknobtn1" id="liknobtn_1" onmouseover="this.style.backgroundPosition='0 -20px';" onmousedown="this.style.backgroundPosition='0 -40px';" onmouseup="this.style.backgroundPosition='0 -20px';" onmouseout="this.style.backgroundPosition='0 0';"></div>
+<div class="liknobtn liknobtn2" id="liknobtn_2" onmouseover="this.style.backgroundPosition='0 -20px';" onmousedown="this.style.backgroundPosition='0 -40px';" onmouseup="this.style.backgroundPosition='0 -20px';" onmouseout="this.style.backgroundPosition='0 0';"></div>
+<div class="liknobtn liknobtn3" id="liknobtn_3" onmouseover="this.style.backgroundPosition='0 -20px';" onmousedown="this.style.backgroundPosition='0 -40px';" onmouseup="this.style.backgroundPosition='0 -20px';" onmouseout="this.style.backgroundPosition='0 0';"></div>
+<div class="liknobtn liknobtn4" id="liknobtn_4" onmouseover="this.style.backgroundPosition='0 -20px';" onmousedown="this.style.backgroundPosition='0 -40px';" onmouseup="this.style.backgroundPosition='0 -20px';" onmouseout="this.style.backgroundPosition='0 0';"></div>
+<div class="liknobtn liknobtn5" id="liknobtn_5" onmouseover="this.style.backgroundPosition='0 -20px';" onmousedown="this.style.backgroundPosition='0 -40px';" onmouseup="this.style.backgroundPosition='0 -20px';" onmouseout="this.style.backgroundPosition='0 0';"></div>
+<div class="liknobtn liknobtn6" id="liknobtn_6" onmouseover="this.style.backgroundPosition='0 -20px';" onmousedown="this.style.backgroundPosition='0 -40px';" onmouseup="this.style.backgroundPosition='0 -20px';" onmouseout="this.style.backgroundPosition='0 0';"></div>
+<div class="liknobtn liknobtn7" id="liknobtn_7" onmouseover="this.style.backgroundPosition='0 -20px';" onmousedown="this.style.backgroundPosition='0 -40px';" onmouseup="this.style.backgroundPosition='0 -20px';" onmouseout="this.style.backgroundPosition='0 0';"></div>
+<div class="liknobtn liknobtn8" id="liknobtn_8" onmouseover="this.style.backgroundPosition='0 -20px';" onmousedown="this.style.backgroundPosition='0 -40px';" onmouseup="this.style.backgroundPosition='0 -20px';" onmouseout="this.style.backgroundPosition='0 0';"></div>
+<div class="liknobtn liknobtn9" id="liknobtn_9" onmouseover="this.style.backgroundPosition='0 -20px';" onmousedown="this.style.backgroundPosition='0 -40px';" onmouseup="this.style.backgroundPosition='0 -20px';" onmouseout="this.style.backgroundPosition='0 0';"></div>
+</body>
+</html>

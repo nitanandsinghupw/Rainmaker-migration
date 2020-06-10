@@ -1,0 +1,138 @@
+	
+/* Make sure that everything 'does not' have any margin or padding by default. */
+* { margin: 0; padding: 0; }
+
+/* Base style for the report maker */
+body
+  {
+  margin: 0px;
+  background-color: #222222;
+  }
+
+
+.layout
+  {
+  width: 100%;
+  border-spacing: 0px;
+  }
+  
+
+.header
+  {
+  height: 50px; 
+  background-color: white;
+  }
+  
+.content
+  {
+  border: none;
+  vertical-align: top;
+  background-color: White;
+  }
+  
+/*
+ * Setsup the appearance of the controls area
+ */
+.controls
+	{
+	margin-left: 25px;
+	}
+  
+  
+/*
+ ' Defines the appearance of the data gride
+ */
+table.dataView
+  {
+	margin: 10px;
+  text-align: left;
+  background-color: #EEEEEE;
+  border: 2px solid #777777;
+  border-spacing: 1px;
+  }
+  
+table.dataView td
+  {
+  background-color: white;
+  
+  border: none;
+  }
+
+table.dataView td.left
+  {
+  background-color: white;
+  
+  }
+
+table.dataView td.right
+  {
+  background-color: white;
+  }
+
+table.dataView td.gridHeader
+  {
+  height: 30px;
+  background-color: #CCCCCC;
+  
+  border: none;
+  border-bottom: 1px solid black;
+  }
+  
+.headerCell
+	{
+	position: relative; 
+	height: 100%; 
+	width: 100%;
+	line-height: 30px;
+	font-weight: bold;
+	}  
+  
+.columnDragger
+	{
+	cursor: w-resize;
+	background-color: green;
+	width: 1px;
+	}
+  
+.columnSortDirection
+	{
+	float: right;
+	width: 20px;
+	cursor: default;
+	z-index: 10;
+	}
+  
+table.dataView td.gridFooter
+  {
+  background-color: white;
+  
+  }
+
+table.dataView td.gridFooterLeft
+  {
+  background-color: white;
+  
+  }
+
+table.dataView td.gridFooterRight
+  {
+  background-color: white;
+  
+  }
+
+table.dataView td.special
+  {
+  background-color: white;
+  }  
+  
+table.dataView td input
+  {
+  width: 99%;
+  height: 98%;
+  }
+  
+table.dataView thead tr,
+table.dataView tfoot tr
+	{
+	background-color: green;
+	}

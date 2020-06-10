@@ -1,0 +1,35 @@
+Global setup:
+
+ Set up git
+  git config --global user.name "James A Howell"
+  git config --global user.email nojava4u@gmail.com
+      
+
+Next steps:
+
+  mkdir Rainmaker
+  cd Rainmaker
+  git init
+  touch README
+  git add README
+  git commit -m 'first commit'
+  git remote add origin git@github.com:nojava4u/Rainmaker.git
+  git push -u origin master
+      
+
+Existing Git Repo?
+
+  cd existing_git_repo
+  git remote add origin git@github.com:nojava4u/Rainmaker.git
+  git push -u origin master
+      
+
+
+      
+RAINMAKER CODE
+Daily Pushes and updates like this:
+cd /c/rainmaker/rainmaker.root      - CD to the source directory on local machine
+ls -als         - Confirm your in the correct directoy
+git add .   - the . adds wildcard for all files to push. or select individual files
+git commit -m 'Put our info in this command'   - the information inside the tags will show as text on github
+git push -u origin master

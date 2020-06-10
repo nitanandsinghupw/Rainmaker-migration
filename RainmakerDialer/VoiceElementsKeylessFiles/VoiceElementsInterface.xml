@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VoiceElementsInterface</name>
+    </assembly>
+    <members>
+        <member name="T:VoiceElements.Interface.TelephonyLink">
+            <summary>
+            This is a Class that Creates the link between the client and the server.
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Interface.TelephonyLink.Url">
+            <summary>
+            The Url
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Interface.TelephonyLink.Guid">
+            <summary>
+            The Guid
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Interface.TelephonyLink.HostName">
+            <summary>
+            The HostName
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Interface.TelephonyServerLink">
+            <summary>
+            The Telephony Server Link.  This object exists on the Client, but creates the proxy that lives on the server.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Interface.TelephonyServerLinkShim">
+            <summary>
+            This is a Telephony Link Shim for Dealing With Events
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Interface.EventShim">
+            <summary>
+            This is a Telephony Link Shim for Dealing With Events
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Interface.TelephonyServerProxy">
+            <summary>
+            This is the main Telephony Server Proxy.  It gets created through remoting on the Server.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Interface.ClientCallbackProxy">
+            <summary>
+            This is the Client Callback proxy.  It gets created through remoting on the Client.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Interface.VoiceResourceLinkShim">
+            <summary>
+            This is a VoiceResourceLink Link Shim for Dealing With Events
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Interface.TelephonyLinkShim">
+            <summary>
+            This is a Telephony Link Shim for Dealing With Events
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Interface.ChannelResourceLinkShim">
+            <summary>
+            This is a ChannelResource Link Shim for Dealing With Events
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Interface.NewCallEventArgs.OK">
+            <summary>
+            This must be set by the client to inform the server the message was received.
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Interface.NewCallEventArgs.Cancel">
+            <summary>
+            Informs server to drop the incoming call.  Leave false to take the call.
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Interface.DigitEventArgs.OK">
+            <summary>
+            This must be set by the client to inform the server the message was received.
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Interface.FaxStatusEventArgs.OK">
+            <summary>
+            This must be set by the client to inform the server the message was received.
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Interface.FileInformation.#ctor(System.String,VoiceElements.Interface.CacheMode)">
+            <summary>
+            Creates a fileinfomation structure from a filename and a cachemode.
+            </summary>
+            <param name="filename"></param>
+            <param name="cachemode"></param>
+        </member>
+    </members>
+</doc>

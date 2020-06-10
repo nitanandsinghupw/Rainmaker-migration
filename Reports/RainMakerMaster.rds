@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>RainMakerMaster</Name>
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=LOCALHOST\SQLEXPRESS;Initial Catalog=RainmakerMaster</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>beb13851-1b62-47a1-9b93-e662e8c4a5a0</DataSourceID>
+</RptDataSource>

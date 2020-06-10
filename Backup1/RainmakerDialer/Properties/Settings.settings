@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RainMakerDialer.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="RainMakerDialer_AgentsWS_AgentService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://leadsweeper-dev/RainmakerWs/AgentService.asmx</Value>
+    </Setting>
+    <Setting Name="RainMakerDialer_CampaignWS_CampaignService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://leadsweeper-dev/RainmakerWs/CampaignService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

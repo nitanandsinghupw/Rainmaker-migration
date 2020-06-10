@@ -1,0 +1,416 @@
+BODY {
+/*outside border is white...can change to any color*/
+	MARGIN: 0px; 
+	BACKGROUND-COLOR: #191970;
+	COLOR: #3366FF;
+	margin-top:0px;
+	margin-left:0px;
+}
+
+TD{
+/*all the text in all the tables and web pages...*/
+	color: #191970;
+	font-family: verdana, arial, Helvetica;
+	font-size: 11px;
+}
+
+.tdSetting
+{
+    /*table text Campaign Details */
+	BACKGROUND: url(../images/bghdr2.jpg) repeat-x; 	
+	HEIGHT:25px;
+	Color:#C82536;
+	Font-Weight:Bold;	
+	Z-INDEX:1;
+}
+
+.tdSpacer{
+/* top and bottom horizontal lines used for spacers */
+	BACKGROUND-COLOR: #191970;		
+	height:1px;
+}
+
+.TextFont{		
+	Font-Weight:Bold;
+	font-size:xx-large;
+}
+
+.tdSideBar{
+	BACKGROUND: url(../../images/bgsidebar1.jpg) repeat-x;	
+}
+
+.tdHdr{	
+/* text color of header system settings */
+	Color:#C82536;
+	Font-Weight:Bold;
+	PADDING-LEFT:5px;
+}
+
+.readonlyText{	
+	Color:#191970;
+	Font-Weight:Bold;
+}
+
+
+.aMenu{	
+/* the menu text color */
+	Color:#C82536;
+	Font-Weight:Bold;
+	PADDING-LEFT:5px;
+	PADDING-RIGHT:5px;
+	text-decoration:underline;
+}
+
+.aMenu:hover{	
+	Color:#0E8C3A;
+	Font-Weight:Bold;
+	PADDING-LEFT:5px;
+	PADDING-RIGHT:5px;
+	text-decoration:none;
+}
+
+.alink{	
+/* name of campaigns and delete and clear links */
+	Color:#000000;	
+	PADDING-LEFT:5px;
+	PADDING-RIGHT:5px;
+	text-decoration:underline;
+}
+
+.alink:hover{	
+	Color:#0E8C3A;	
+	PADDING-LEFT:5px;
+	PADDING-RIGHT:5px;
+	text-decoration:none;
+}
+
+
+.aHome{	
+/* breadcrumbs for campaign drilling down*/
+	Color:#C82536;
+	Font-Weight:Bold;
+	PADDING-LEFT:0px;
+	PADDING-RIGHT:0px;
+	text-decoration:none;
+}
+
+.aHome:hover{	
+	Color:#0E8C3A;
+	Font-Weight:Bold;
+	PADDING-LEFT:0px;
+	PADDING-RIGHT:0px;
+	text-decoration:underline;
+}
+
+.aScoreBoard{	
+/* all campaign menu choices in the right table of all campaigns */
+	Color:#4875A5;
+	Font-Weight:Bold;
+	PADDING-LEFT:5px;
+	PADDING-RIGHT:5px;
+	text-decoration:none;
+}
+
+.aScoreBoard:hover{	
+	Color:#000000;
+	Font-Weight:Bold;
+	PADDING-LEFT:5px;
+	PADDING-RIGHT:5px;
+	text-decoration:underline;
+}
+
+
+.tdFooter{
+/* Footer credits for inventive and impact */
+	PADDING-LEFT:5px;
+	PADDING-RIGHT:5px;	
+	Color:#4875A5;
+}
+
+.headerText {	
+	font-size: 12px;
+	font-weight:bold;
+}
+
+.noteText {	
+	font-size: 9px;
+}
+
+.lblBlue
+{
+	color: Blue;
+	font-family: verdana, arial, Helvetica;
+	font-size: 11px;
+}
+
+.txtLarge{
+	BORDER-RIGHT: #050040 1px solid;
+	BORDER-TOP: #050040 1px solid; 
+	BORDER-LEFT: #050040 1px solid;
+	BORDER-BOTTOM: #050040 1px solid;
+	HEIGHT:20px;
+	WIDTH:300px;
+	color: #050040;
+	font-family: verdana, arial, Helvetica;
+	font-size: 11px;
+}
+
+.txtmini{
+	BORDER-RIGHT: #050040 1px solid;
+	BORDER-TOP: #050040 1px solid; 
+	BORDER-LEFT: #050040 1px solid;
+	BORDER-BOTTOM: #050040 1px solid;
+	HEIGHT:20px;
+	WIDTH:50px;
+	color: #050040;
+	font-family: verdana, arial, Helvetica;
+	font-size: 11px;
+}
+
+.txtsmall{
+	BORDER-RIGHT: #050040 1px solid;
+	BORDER-TOP: #050040 1px solid; 
+	BORDER-LEFT: #050040 1px solid;
+	BORDER-BOTTOM: #050040 1px solid;
+	HEIGHT:20px;
+	WIDTH:100px;
+	color: #050040;
+	font-family: verdana, arial, Helvetica;
+	font-size: 11px;
+}
+
+.txtmedium{
+	BORDER-RIGHT: #050040 1px solid;
+	BORDER-TOP: #050040 1px solid; 
+	BORDER-LEFT: #050040 1px solid;
+	BORDER-BOTTOM: #050040 1px solid;
+	HEIGHT:20px;
+	WIDTH:150px;
+	color: #050040;
+	font-family: verdana, arial, Helvetica;
+	font-size: 11px;
+}
+
+.txtnormal{
+	BORDER-RIGHT: #050040 1px solid;
+	BORDER-TOP: #050040 1px solid; 
+	BORDER-LEFT: #050040 1px solid;
+	BORDER-BOTTOM: #050040 1px solid;
+	HEIGHT:20px;
+	WIDTH:200px;
+	color: #050040;
+	font-family: verdana, arial, Helvetica;
+	font-size: 11px;
+}
+
+.txtTooLarge
+{
+	border-right: #050040 1px solid;
+	border-top: #050040 1px solid;
+	border-left: #050040 1px solid;
+	border-bottom: #050040 1px solid;
+	height: 20px;
+	width: 620px;
+	color: #050040;
+	font-family: verdana, arial, Helvetica;
+	font-size: 11px;
+	
+}
+
+.select1
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+	FONT-SiZE:11px;
+	BORDER-RIGHT: #050040  1px solid;
+	BORDER-TOP: #050040 1px solid; 
+	BORDER-LEFT: #050040 1px solid;
+	BORDER-BOTTOM: #050040 1px solid;	
+}
+
+
+.listBox
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+	FONT-SiZE:11px;
+	BORDER-RIGHT: #050040  1px solid;
+	BORDER-TOP: #050040 1px solid; 
+	BORDER-LEFT: #050040 1px solid;
+	BORDER-BOTTOM: #050040 1px solid;	
+	HEIGHT:20px;
+	WIDTH:60px;
+}
+
+.listBoxMedium
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+	FONT-SiZE:11px;
+	BORDER-RIGHT: #050040  1px solid;
+	BORDER-TOP: #050040 1px solid; 
+	BORDER-LEFT: #050040 1px solid;
+	BORDER-BOTTOM: #050040 1px solid;
+	WIDTH:180px;
+}
+.listBoxLarge
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+	FONT-SiZE:11px;
+	BORDER-RIGHT: #050040  1px solid;
+	BORDER-TOP: #050040 1px solid; 
+	BORDER-LEFT: #050040 1px solid;
+	BORDER-BOTTOM: #050040 1px solid;	
+	HEIGHT:140px;
+	WIDTH:380px;
+}
+
+.dropDownList
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+	FONT-SiZE:11px;
+	BORDER-RIGHT: #fff000  1px solid;
+	BORDER-TOP: #fff000 1px solid; 
+	BORDER-LEFT: #fff000 1px solid;
+	BORDER-BOTTOM: #fff000 1px solid;	
+	HEIGHT:20px;
+	WIDTH:200px;
+}
+
+.dropDownList_M
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+	FONT-SiZE:11px;
+	BORDER-RIGHT: #050040  1px solid;
+	BORDER-TOP: #050040 1px solid; 
+	BORDER-LEFT: #050040 1px solid;
+	BORDER-BOTTOM: #050040 1px solid;	
+	HEIGHT:20px;
+	WIDTH:150px;
+}
+
+.select
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+	FONT-SiZE:11px;
+	BORDER-RIGHT: #050040  1px solid;
+	BORDER-TOP: #050040 1px solid; 
+	BORDER-LEFT: #050040 1px solid;
+	BORDER-BOTTOM: #050040 1px solid;	
+	HEIGHT:20px;	
+}
+
+.fileUpload
+{
+	/*BORDER-RIGHT: #050040 1px solid;
+	BORDER-TOP: #050040 1px solid; 
+	BORDER-LEFT: #050040 1px solid;
+	BORDER-BOTTOM: #050040 1px solid;*/
+	HEIGHT:20px;
+	WIDTH:350px;
+	/*color: #050040;*/
+	font-family: verdana, arial, Helvetica;
+	font-size: 11px;
+}
+
+.tablecontentBlack{
+/*Campaign table border color*/
+	BACKGROUND-COLOR: #000000;		 	
+}
+.tdHeader{
+/* Outside line frame*/
+	BACKGROUND-COLOR:#000000;
+}
+.tdWhite{
+/* Main window color background */
+	BACKGROUND-COLOR: #42C0FB;		 
+}
+.tableGrid
+{
+	padding-bottom:2px;
+	padding-left:2px;
+	padding-top:2px;
+	padding-right:2px;
+}
+
+.tableHdr{
+	BACKGROUND-COLOR: #42C0FB;
+	/*background-image:url(../images/bghdr3.jpg);*/
+	background:url('../images/bghdr3.jpg') repeat-x 0px 1px;
+	text-align:left;	 	
+	HEIGHT:25px;
+	Color:#325072;
+	Font-Weight:Bold;
+	margin:1px 1px 1px 1px;			
+	padding: 1px 1px 1px 3px;	
+}
+
+.tableRow{	
+	BACKGROUND-COLOR: #ffffff;	
+	/*float:left;*/	
+	border-left:1px;
+	border-right:1px;	 	
+	HEIGHT:20px;
+	Color:#325072;
+	text-align:left;	
+	margin:1px 1px 1px 1px;	
+}
+
+.tableAltRow{	
+	BACKGROUND-COLOR: #ffff00;	
+	float:left;	 	
+	HEIGHT:20px;
+	Color:#325072;
+	text-align:left;	
+}
+
+.tableRowSys{	
+	BACKGROUND-COLOR: #ffffee;	
+	/*float:left;*/	
+	border-left:1px;
+	border-right:1px;	 	
+	HEIGHT:20px;
+	Color:#325072;
+	text-align:left;	
+	margin:1px 1px 1px 1px;			
+}
+
+.button
+{
+	font-family: verdana, arial, Helvetica;
+	font-size: 10px;
+	HEIGHT:18px;
+}
+.bgSkyBlue{
+	BACKGROUND-COLOR: #1cb5ff;
+}
+.grdHeader{
+	BACKGROUND-COLOR:#ffffff;
+	HEIGHT:15px;
+	Color:#325072;
+	Font-Weight:Bold;	
+	Z-INDEX:1;
+}
+
+.checkboxBold{
+	Font-Weight:Bold;
+}
+
+
+.tdWaiting{
+	color: #000000;
+	font-family: verdana, arial, Helvetica;
+	font-size: 14px;
+	Font-Weight:Bold;
+}
+
+.tdPause{
+	color: #808080;
+	font-family: verdana, arial, Helvetica;
+	font-size: 14px;
+	Font-Weight:Bold;
+}
+
+.tdProgress{
+	color: #325072;
+	font-family: verdana, arial, Helvetica;
+	font-size: 14px;
+	Font-Weight:Bold;	
+}

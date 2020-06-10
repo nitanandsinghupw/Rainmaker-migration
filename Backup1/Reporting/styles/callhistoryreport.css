@@ -1,0 +1,35 @@
+#callHistoryResultsHeader {
+    
+    width: 980px;
+    border: 2px solid black;
+    margin-left: 15px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+#callHistoryResultsRow {
+
+    margin-left: 15px;
+    margin-bottom: 5px; 
+    border-style: none;
+}
+
+#callHistoryReportHeader {
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: underline;
+    margin-left: 2px;
+}
+.callHistorySecHeader {
+    font-size: x-large;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.callHistoryReport {
+    position: relative; 
+    width: 1000px;
+}
