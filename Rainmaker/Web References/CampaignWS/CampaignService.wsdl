@@ -1,346 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
-      <s:element name="InsertUpdateScheduledCampaign">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-            <s:element minOccurs="0" maxOccurs="1" name="xCampaigndetails">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="InsertUpdateScheduledCampaignResponse">
-        <s:complexType />
-      </s:element>
-      <s:element name="UpdateCampaignSchedule">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-            <s:element minOccurs="0" maxOccurs="1" name="xCampaigndetails">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-            <s:element minOccurs="1" maxOccurs="1" name="isFromAgentInterface" type="s:boolean" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="UpdateCampaignScheduleResponse">
-        <s:complexType />
-      </s:element>
-      <s:element name="GetPhoneLinesInUseCount">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="CampaignID" type="s:long" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetPhoneLinesInUseCountResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="GetPhoneLinesInUseCountResult" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="CheckCampaignTransferCall">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="strCampDB" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="UniqueKey" type="s:long" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="CheckCampaignTransferCallResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="CheckCampaignTransferCallResult" type="s:boolean" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="SubmitAdminRequest">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="requestType" type="s:int" />
-            <s:element minOccurs="0" maxOccurs="1" name="requestData" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="SubmitAdminRequestResponse">
-        <s:complexType />
-      </s:element>
-      <s:element name="GetAdminRequests">
-        <s:complexType />
-      </s:element>
-      <s:element name="GetAdminRequestsResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="GetAdminRequestsResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="UpdateAdminRequestStatus">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="requestID" type="s:long" />
-            <s:element minOccurs="1" maxOccurs="1" name="requestStatus" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="UpdateAdminRequestStatusResponse">
-        <s:complexType />
-      </s:element>
-      <s:element name="GetTrainingScheme">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-            <s:element minOccurs="1" maxOccurs="1" name="trainingSchemeID" type="s:long" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetTrainingSchemeResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="GetTrainingSchemeResult">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetTrainingPageList">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-            <s:element minOccurs="1" maxOccurs="1" name="trainingSchemeID" type="s:long" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetTrainingPageListResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="GetTrainingPageListResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetTrainingSchemeList">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetTrainingSchemeListResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="GetTrainingSchemeListResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="UpdateActiveTrainingScheme">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-            <s:element minOccurs="1" maxOccurs="1" name="trainingSchemeID" type="s:long" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="UpdateActiveTrainingSchemeResponse">
-        <s:complexType />
-      </s:element>
-      <s:element name="DeleteTrainingScheme">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-            <s:element minOccurs="1" maxOccurs="1" name="trainingSchemeID" type="s:long" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="DeleteTrainingSchemeResponse">
-        <s:complexType />
-      </s:element>
-      <s:element name="AddTrainingScheme">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-            <s:element minOccurs="0" maxOccurs="1" name="trainingSchemeName" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="AddTrainingSchemeResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="AddTrainingSchemeResult" type="s:long" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetTrainingPage">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-            <s:element minOccurs="1" maxOccurs="1" name="trainingPageID" type="s:long" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetTrainingPageResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="GetTrainingPageResult">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="TrainingPageInsertUpdate">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-            <s:element minOccurs="0" maxOccurs="1" name="xTrainingPage">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="TrainingPageInsertUpdateResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="TrainingPageInsertUpdateResult">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetActiveTrainingPageList">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
-              <s:complexType mixed="true">
-                <s:sequence>
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetActiveTrainingPageListResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="GetActiveTrainingPageListResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
       <s:element name="CampaignInsertUpdate">
         <s:complexType>
           <s:sequence>
@@ -2173,104 +1834,347 @@
       <s:element name="DeleteCampaignFieldResponse">
         <s:complexType />
       </s:element>
+      <s:element name="InsertUpdateScheduledCampaign">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaigndetails">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertUpdateScheduledCampaignResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateCampaignSchedule">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaigndetails">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="isFromAgentInterface" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCampaignScheduleResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPhoneLinesInUseCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CampaignID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPhoneLinesInUseCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPhoneLinesInUseCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckCampaignTransferCall">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCampDB" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="UniqueKey" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckCampaignTransferCallResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckCampaignTransferCallResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitAdminRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="requestType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="requestData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitAdminRequestResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAdminRequests">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAdminRequestsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAdminRequestsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAdminRequestStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="requestID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="requestStatus" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAdminRequestStatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTrainingScheme">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="trainingSchemeID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrainingSchemeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTrainingSchemeResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrainingPageList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="trainingSchemeID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrainingPageListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTrainingPageListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrainingSchemeList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrainingSchemeListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTrainingSchemeListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateActiveTrainingScheme">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="trainingSchemeID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateActiveTrainingSchemeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteTrainingScheme">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="trainingSchemeID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteTrainingSchemeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddTrainingScheme">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="trainingSchemeName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTrainingSchemeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddTrainingSchemeResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrainingPage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="trainingPageID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrainingPageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTrainingPageResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrainingPageInsertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xTrainingPage">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrainingPageInsertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrainingPageInsertUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActiveTrainingPageList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCampaign">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActiveTrainingPageListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetActiveTrainingPageListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
     </s:schema>
   </wsdl:types>
-  <wsdl:message name="InsertUpdateScheduledCampaignSoapIn">
-    <wsdl:part name="parameters" element="tns:InsertUpdateScheduledCampaign" />
-  </wsdl:message>
-  <wsdl:message name="InsertUpdateScheduledCampaignSoapOut">
-    <wsdl:part name="parameters" element="tns:InsertUpdateScheduledCampaignResponse" />
-  </wsdl:message>
-  <wsdl:message name="UpdateCampaignScheduleSoapIn">
-    <wsdl:part name="parameters" element="tns:UpdateCampaignSchedule" />
-  </wsdl:message>
-  <wsdl:message name="UpdateCampaignScheduleSoapOut">
-    <wsdl:part name="parameters" element="tns:UpdateCampaignScheduleResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetPhoneLinesInUseCountSoapIn">
-    <wsdl:part name="parameters" element="tns:GetPhoneLinesInUseCount" />
-  </wsdl:message>
-  <wsdl:message name="GetPhoneLinesInUseCountSoapOut">
-    <wsdl:part name="parameters" element="tns:GetPhoneLinesInUseCountResponse" />
-  </wsdl:message>
-  <wsdl:message name="CheckCampaignTransferCallSoapIn">
-    <wsdl:part name="parameters" element="tns:CheckCampaignTransferCall" />
-  </wsdl:message>
-  <wsdl:message name="CheckCampaignTransferCallSoapOut">
-    <wsdl:part name="parameters" element="tns:CheckCampaignTransferCallResponse" />
-  </wsdl:message>
-  <wsdl:message name="SubmitAdminRequestSoapIn">
-    <wsdl:part name="parameters" element="tns:SubmitAdminRequest" />
-  </wsdl:message>
-  <wsdl:message name="SubmitAdminRequestSoapOut">
-    <wsdl:part name="parameters" element="tns:SubmitAdminRequestResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetAdminRequestsSoapIn">
-    <wsdl:part name="parameters" element="tns:GetAdminRequests" />
-  </wsdl:message>
-  <wsdl:message name="GetAdminRequestsSoapOut">
-    <wsdl:part name="parameters" element="tns:GetAdminRequestsResponse" />
-  </wsdl:message>
-  <wsdl:message name="UpdateAdminRequestStatusSoapIn">
-    <wsdl:part name="parameters" element="tns:UpdateAdminRequestStatus" />
-  </wsdl:message>
-  <wsdl:message name="UpdateAdminRequestStatusSoapOut">
-    <wsdl:part name="parameters" element="tns:UpdateAdminRequestStatusResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetTrainingSchemeSoapIn">
-    <wsdl:part name="parameters" element="tns:GetTrainingScheme" />
-  </wsdl:message>
-  <wsdl:message name="GetTrainingSchemeSoapOut">
-    <wsdl:part name="parameters" element="tns:GetTrainingSchemeResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetTrainingPageListSoapIn">
-    <wsdl:part name="parameters" element="tns:GetTrainingPageList" />
-  </wsdl:message>
-  <wsdl:message name="GetTrainingPageListSoapOut">
-    <wsdl:part name="parameters" element="tns:GetTrainingPageListResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetTrainingSchemeListSoapIn">
-    <wsdl:part name="parameters" element="tns:GetTrainingSchemeList" />
-  </wsdl:message>
-  <wsdl:message name="GetTrainingSchemeListSoapOut">
-    <wsdl:part name="parameters" element="tns:GetTrainingSchemeListResponse" />
-  </wsdl:message>
-  <wsdl:message name="UpdateActiveTrainingSchemeSoapIn">
-    <wsdl:part name="parameters" element="tns:UpdateActiveTrainingScheme" />
-  </wsdl:message>
-  <wsdl:message name="UpdateActiveTrainingSchemeSoapOut">
-    <wsdl:part name="parameters" element="tns:UpdateActiveTrainingSchemeResponse" />
-  </wsdl:message>
-  <wsdl:message name="DeleteTrainingSchemeSoapIn">
-    <wsdl:part name="parameters" element="tns:DeleteTrainingScheme" />
-  </wsdl:message>
-  <wsdl:message name="DeleteTrainingSchemeSoapOut">
-    <wsdl:part name="parameters" element="tns:DeleteTrainingSchemeResponse" />
-  </wsdl:message>
-  <wsdl:message name="AddTrainingSchemeSoapIn">
-    <wsdl:part name="parameters" element="tns:AddTrainingScheme" />
-  </wsdl:message>
-  <wsdl:message name="AddTrainingSchemeSoapOut">
-    <wsdl:part name="parameters" element="tns:AddTrainingSchemeResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetTrainingPageSoapIn">
-    <wsdl:part name="parameters" element="tns:GetTrainingPage" />
-  </wsdl:message>
-  <wsdl:message name="GetTrainingPageSoapOut">
-    <wsdl:part name="parameters" element="tns:GetTrainingPageResponse" />
-  </wsdl:message>
-  <wsdl:message name="TrainingPageInsertUpdateSoapIn">
-    <wsdl:part name="parameters" element="tns:TrainingPageInsertUpdate" />
-  </wsdl:message>
-  <wsdl:message name="TrainingPageInsertUpdateSoapOut">
-    <wsdl:part name="parameters" element="tns:TrainingPageInsertUpdateResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetActiveTrainingPageListSoapIn">
-    <wsdl:part name="parameters" element="tns:GetActiveTrainingPageList" />
-  </wsdl:message>
-  <wsdl:message name="GetActiveTrainingPageListSoapOut">
-    <wsdl:part name="parameters" element="tns:GetActiveTrainingPageListResponse" />
-  </wsdl:message>
   <wsdl:message name="CampaignInsertUpdateSoapIn">
     <wsdl:part name="parameters" element="tns:CampaignInsertUpdate" />
   </wsdl:message>
@@ -2775,71 +2679,103 @@
   <wsdl:message name="DeleteCampaignFieldSoapOut">
     <wsdl:part name="parameters" element="tns:DeleteCampaignFieldResponse" />
   </wsdl:message>
+  <wsdl:message name="InsertUpdateScheduledCampaignSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertUpdateScheduledCampaign" />
+  </wsdl:message>
+  <wsdl:message name="InsertUpdateScheduledCampaignSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertUpdateScheduledCampaignResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCampaignScheduleSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCampaignSchedule" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCampaignScheduleSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCampaignScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPhoneLinesInUseCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPhoneLinesInUseCount" />
+  </wsdl:message>
+  <wsdl:message name="GetPhoneLinesInUseCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPhoneLinesInUseCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckCampaignTransferCallSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckCampaignTransferCall" />
+  </wsdl:message>
+  <wsdl:message name="CheckCampaignTransferCallSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckCampaignTransferCallResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubmitAdminRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:SubmitAdminRequest" />
+  </wsdl:message>
+  <wsdl:message name="SubmitAdminRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:SubmitAdminRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAdminRequestsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAdminRequests" />
+  </wsdl:message>
+  <wsdl:message name="GetAdminRequestsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAdminRequestsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAdminRequestStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAdminRequestStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAdminRequestStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAdminRequestStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTrainingSchemeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTrainingScheme" />
+  </wsdl:message>
+  <wsdl:message name="GetTrainingSchemeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTrainingSchemeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTrainingPageListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTrainingPageList" />
+  </wsdl:message>
+  <wsdl:message name="GetTrainingPageListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTrainingPageListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTrainingSchemeListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTrainingSchemeList" />
+  </wsdl:message>
+  <wsdl:message name="GetTrainingSchemeListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTrainingSchemeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateActiveTrainingSchemeSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateActiveTrainingScheme" />
+  </wsdl:message>
+  <wsdl:message name="UpdateActiveTrainingSchemeSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateActiveTrainingSchemeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTrainingSchemeSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteTrainingScheme" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTrainingSchemeSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteTrainingSchemeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTrainingSchemeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTrainingScheme" />
+  </wsdl:message>
+  <wsdl:message name="AddTrainingSchemeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTrainingSchemeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTrainingPageSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTrainingPage" />
+  </wsdl:message>
+  <wsdl:message name="GetTrainingPageSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTrainingPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrainingPageInsertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:TrainingPageInsertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="TrainingPageInsertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:TrainingPageInsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetActiveTrainingPageListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetActiveTrainingPageList" />
+  </wsdl:message>
+  <wsdl:message name="GetActiveTrainingPageListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetActiveTrainingPageListResponse" />
+  </wsdl:message>
   <wsdl:portType name="CampaignServiceSoap">
-    <wsdl:operation name="InsertUpdateScheduledCampaign">
-      <wsdl:input message="tns:InsertUpdateScheduledCampaignSoapIn" />
-      <wsdl:output message="tns:InsertUpdateScheduledCampaignSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="UpdateCampaignSchedule">
-      <wsdl:input message="tns:UpdateCampaignScheduleSoapIn" />
-      <wsdl:output message="tns:UpdateCampaignScheduleSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetPhoneLinesInUseCount">
-      <wsdl:input message="tns:GetPhoneLinesInUseCountSoapIn" />
-      <wsdl:output message="tns:GetPhoneLinesInUseCountSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="CheckCampaignTransferCall">
-      <wsdl:input message="tns:CheckCampaignTransferCallSoapIn" />
-      <wsdl:output message="tns:CheckCampaignTransferCallSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="SubmitAdminRequest">
-      <wsdl:input message="tns:SubmitAdminRequestSoapIn" />
-      <wsdl:output message="tns:SubmitAdminRequestSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetAdminRequests">
-      <wsdl:input message="tns:GetAdminRequestsSoapIn" />
-      <wsdl:output message="tns:GetAdminRequestsSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="UpdateAdminRequestStatus">
-      <wsdl:input message="tns:UpdateAdminRequestStatusSoapIn" />
-      <wsdl:output message="tns:UpdateAdminRequestStatusSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetTrainingScheme">
-      <wsdl:input message="tns:GetTrainingSchemeSoapIn" />
-      <wsdl:output message="tns:GetTrainingSchemeSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetTrainingPageList">
-      <wsdl:input message="tns:GetTrainingPageListSoapIn" />
-      <wsdl:output message="tns:GetTrainingPageListSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetTrainingSchemeList">
-      <wsdl:input message="tns:GetTrainingSchemeListSoapIn" />
-      <wsdl:output message="tns:GetTrainingSchemeListSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="UpdateActiveTrainingScheme">
-      <wsdl:input message="tns:UpdateActiveTrainingSchemeSoapIn" />
-      <wsdl:output message="tns:UpdateActiveTrainingSchemeSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="DeleteTrainingScheme">
-      <wsdl:input message="tns:DeleteTrainingSchemeSoapIn" />
-      <wsdl:output message="tns:DeleteTrainingSchemeSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="AddTrainingScheme">
-      <wsdl:input message="tns:AddTrainingSchemeSoapIn" />
-      <wsdl:output message="tns:AddTrainingSchemeSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetTrainingPage">
-      <wsdl:input message="tns:GetTrainingPageSoapIn" />
-      <wsdl:output message="tns:GetTrainingPageSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="TrainingPageInsertUpdate">
-      <wsdl:input message="tns:TrainingPageInsertUpdateSoapIn" />
-      <wsdl:output message="tns:TrainingPageInsertUpdateSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetActiveTrainingPageList">
-      <wsdl:input message="tns:GetActiveTrainingPageListSoapIn" />
-      <wsdl:output message="tns:GetActiveTrainingPageListSoapOut" />
-    </wsdl:operation>
     <wsdl:operation name="CampaignInsertUpdate">
       <wsdl:input message="tns:CampaignInsertUpdateSoapIn" />
       <wsdl:output message="tns:CampaignInsertUpdateSoapOut" />
@@ -3176,153 +3112,73 @@
       <wsdl:input message="tns:DeleteCampaignFieldSoapIn" />
       <wsdl:output message="tns:DeleteCampaignFieldSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="InsertUpdateScheduledCampaign">
+      <wsdl:input message="tns:InsertUpdateScheduledCampaignSoapIn" />
+      <wsdl:output message="tns:InsertUpdateScheduledCampaignSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignSchedule">
+      <wsdl:input message="tns:UpdateCampaignScheduleSoapIn" />
+      <wsdl:output message="tns:UpdateCampaignScheduleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoneLinesInUseCount">
+      <wsdl:input message="tns:GetPhoneLinesInUseCountSoapIn" />
+      <wsdl:output message="tns:GetPhoneLinesInUseCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckCampaignTransferCall">
+      <wsdl:input message="tns:CheckCampaignTransferCallSoapIn" />
+      <wsdl:output message="tns:CheckCampaignTransferCallSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitAdminRequest">
+      <wsdl:input message="tns:SubmitAdminRequestSoapIn" />
+      <wsdl:output message="tns:SubmitAdminRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdminRequests">
+      <wsdl:input message="tns:GetAdminRequestsSoapIn" />
+      <wsdl:output message="tns:GetAdminRequestsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAdminRequestStatus">
+      <wsdl:input message="tns:UpdateAdminRequestStatusSoapIn" />
+      <wsdl:output message="tns:UpdateAdminRequestStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingScheme">
+      <wsdl:input message="tns:GetTrainingSchemeSoapIn" />
+      <wsdl:output message="tns:GetTrainingSchemeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingPageList">
+      <wsdl:input message="tns:GetTrainingPageListSoapIn" />
+      <wsdl:output message="tns:GetTrainingPageListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingSchemeList">
+      <wsdl:input message="tns:GetTrainingSchemeListSoapIn" />
+      <wsdl:output message="tns:GetTrainingSchemeListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActiveTrainingScheme">
+      <wsdl:input message="tns:UpdateActiveTrainingSchemeSoapIn" />
+      <wsdl:output message="tns:UpdateActiveTrainingSchemeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTrainingScheme">
+      <wsdl:input message="tns:DeleteTrainingSchemeSoapIn" />
+      <wsdl:output message="tns:DeleteTrainingSchemeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTrainingScheme">
+      <wsdl:input message="tns:AddTrainingSchemeSoapIn" />
+      <wsdl:output message="tns:AddTrainingSchemeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingPage">
+      <wsdl:input message="tns:GetTrainingPageSoapIn" />
+      <wsdl:output message="tns:GetTrainingPageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrainingPageInsertUpdate">
+      <wsdl:input message="tns:TrainingPageInsertUpdateSoapIn" />
+      <wsdl:output message="tns:TrainingPageInsertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveTrainingPageList">
+      <wsdl:input message="tns:GetActiveTrainingPageListSoapIn" />
+      <wsdl:output message="tns:GetActiveTrainingPageListSoapOut" />
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="CampaignServiceSoap" type="tns:CampaignServiceSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="InsertUpdateScheduledCampaign">
-      <soap:operation soapAction="http://tempuri.org/InsertUpdateScheduledCampaign" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="UpdateCampaignSchedule">
-      <soap:operation soapAction="http://tempuri.org/UpdateCampaignSchedule" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetPhoneLinesInUseCount">
-      <soap:operation soapAction="http://tempuri.org/GetPhoneLinesInUseCount" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="CheckCampaignTransferCall">
-      <soap:operation soapAction="http://tempuri.org/CheckCampaignTransferCall" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="SubmitAdminRequest">
-      <soap:operation soapAction="http://tempuri.org/SubmitAdminRequest" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetAdminRequests">
-      <soap:operation soapAction="http://tempuri.org/GetAdminRequests" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="UpdateAdminRequestStatus">
-      <soap:operation soapAction="http://tempuri.org/UpdateAdminRequestStatus" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetTrainingScheme">
-      <soap:operation soapAction="http://tempuri.org/GetTrainingScheme" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetTrainingPageList">
-      <soap:operation soapAction="http://tempuri.org/GetTrainingPageList" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetTrainingSchemeList">
-      <soap:operation soapAction="http://tempuri.org/GetTrainingSchemeList" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="UpdateActiveTrainingScheme">
-      <soap:operation soapAction="http://tempuri.org/UpdateActiveTrainingScheme" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="DeleteTrainingScheme">
-      <soap:operation soapAction="http://tempuri.org/DeleteTrainingScheme" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="AddTrainingScheme">
-      <soap:operation soapAction="http://tempuri.org/AddTrainingScheme" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetTrainingPage">
-      <soap:operation soapAction="http://tempuri.org/GetTrainingPage" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="TrainingPageInsertUpdate">
-      <soap:operation soapAction="http://tempuri.org/TrainingPageInsertUpdate" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetActiveTrainingPageList">
-      <soap:operation soapAction="http://tempuri.org/GetActiveTrainingPageList" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="CampaignInsertUpdate">
       <soap:operation soapAction="http://tempuri.org/CampaignInsertUpdate" style="document" />
       <wsdl:input>
@@ -4079,153 +3935,153 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-  </wsdl:binding>
-  <wsdl:binding name="CampaignServiceSoap12" type="tns:CampaignServiceSoap">
-    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="InsertUpdateScheduledCampaign">
-      <soap12:operation soapAction="http://tempuri.org/InsertUpdateScheduledCampaign" style="document" />
+      <soap:operation soapAction="http://tempuri.org/InsertUpdateScheduledCampaign" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="UpdateCampaignSchedule">
-      <soap12:operation soapAction="http://tempuri.org/UpdateCampaignSchedule" style="document" />
+      <soap:operation soapAction="http://tempuri.org/UpdateCampaignSchedule" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetPhoneLinesInUseCount">
-      <soap12:operation soapAction="http://tempuri.org/GetPhoneLinesInUseCount" style="document" />
+      <soap:operation soapAction="http://tempuri.org/GetPhoneLinesInUseCount" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="CheckCampaignTransferCall">
-      <soap12:operation soapAction="http://tempuri.org/CheckCampaignTransferCall" style="document" />
+      <soap:operation soapAction="http://tempuri.org/CheckCampaignTransferCall" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="SubmitAdminRequest">
-      <soap12:operation soapAction="http://tempuri.org/SubmitAdminRequest" style="document" />
+      <soap:operation soapAction="http://tempuri.org/SubmitAdminRequest" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetAdminRequests">
-      <soap12:operation soapAction="http://tempuri.org/GetAdminRequests" style="document" />
+      <soap:operation soapAction="http://tempuri.org/GetAdminRequests" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="UpdateAdminRequestStatus">
-      <soap12:operation soapAction="http://tempuri.org/UpdateAdminRequestStatus" style="document" />
+      <soap:operation soapAction="http://tempuri.org/UpdateAdminRequestStatus" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetTrainingScheme">
-      <soap12:operation soapAction="http://tempuri.org/GetTrainingScheme" style="document" />
+      <soap:operation soapAction="http://tempuri.org/GetTrainingScheme" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetTrainingPageList">
-      <soap12:operation soapAction="http://tempuri.org/GetTrainingPageList" style="document" />
+      <soap:operation soapAction="http://tempuri.org/GetTrainingPageList" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetTrainingSchemeList">
-      <soap12:operation soapAction="http://tempuri.org/GetTrainingSchemeList" style="document" />
+      <soap:operation soapAction="http://tempuri.org/GetTrainingSchemeList" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="UpdateActiveTrainingScheme">
-      <soap12:operation soapAction="http://tempuri.org/UpdateActiveTrainingScheme" style="document" />
+      <soap:operation soapAction="http://tempuri.org/UpdateActiveTrainingScheme" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="DeleteTrainingScheme">
-      <soap12:operation soapAction="http://tempuri.org/DeleteTrainingScheme" style="document" />
+      <soap:operation soapAction="http://tempuri.org/DeleteTrainingScheme" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="AddTrainingScheme">
-      <soap12:operation soapAction="http://tempuri.org/AddTrainingScheme" style="document" />
+      <soap:operation soapAction="http://tempuri.org/AddTrainingScheme" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetTrainingPage">
-      <soap12:operation soapAction="http://tempuri.org/GetTrainingPage" style="document" />
+      <soap:operation soapAction="http://tempuri.org/GetTrainingPage" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="TrainingPageInsertUpdate">
-      <soap12:operation soapAction="http://tempuri.org/TrainingPageInsertUpdate" style="document" />
+      <soap:operation soapAction="http://tempuri.org/TrainingPageInsertUpdate" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetActiveTrainingPageList">
-      <soap12:operation soapAction="http://tempuri.org/GetActiveTrainingPageList" style="document" />
+      <soap:operation soapAction="http://tempuri.org/GetActiveTrainingPageList" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CampaignServiceSoap12" type="tns:CampaignServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="CampaignInsertUpdate">
       <soap12:operation soapAction="http://tempuri.org/CampaignInsertUpdate" style="document" />
       <wsdl:input>
@@ -4975,6 +4831,150 @@
     </wsdl:operation>
     <wsdl:operation name="DeleteCampaignField">
       <soap12:operation soapAction="http://tempuri.org/DeleteCampaignField" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateScheduledCampaign">
+      <soap12:operation soapAction="http://tempuri.org/InsertUpdateScheduledCampaign" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaignSchedule">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCampaignSchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoneLinesInUseCount">
+      <soap12:operation soapAction="http://tempuri.org/GetPhoneLinesInUseCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckCampaignTransferCall">
+      <soap12:operation soapAction="http://tempuri.org/CheckCampaignTransferCall" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitAdminRequest">
+      <soap12:operation soapAction="http://tempuri.org/SubmitAdminRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdminRequests">
+      <soap12:operation soapAction="http://tempuri.org/GetAdminRequests" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAdminRequestStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateAdminRequestStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingScheme">
+      <soap12:operation soapAction="http://tempuri.org/GetTrainingScheme" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingPageList">
+      <soap12:operation soapAction="http://tempuri.org/GetTrainingPageList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingSchemeList">
+      <soap12:operation soapAction="http://tempuri.org/GetTrainingSchemeList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActiveTrainingScheme">
+      <soap12:operation soapAction="http://tempuri.org/UpdateActiveTrainingScheme" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTrainingScheme">
+      <soap12:operation soapAction="http://tempuri.org/DeleteTrainingScheme" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTrainingScheme">
+      <soap12:operation soapAction="http://tempuri.org/AddTrainingScheme" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingPage">
+      <soap12:operation soapAction="http://tempuri.org/GetTrainingPage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrainingPageInsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/TrainingPageInsertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveTrainingPageList">
+      <soap12:operation soapAction="http://tempuri.org/GetActiveTrainingPageList" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

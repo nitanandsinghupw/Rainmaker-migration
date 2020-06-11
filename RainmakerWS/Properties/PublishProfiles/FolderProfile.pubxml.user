@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\RainMakerWeb\RainmakerWS</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AgentService.asmx">
+      <publishTime>06/02/2020 16:47:16</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.DLL">
+      <publishTime>06/02/2020 16:47:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationBlocks.Data.dll">
+      <publishTime>06/10/2020 21:23:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationBlocks.ExceptionManagement.dll">
+      <publishTime>06/10/2020 21:23:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll">
+      <publishTime>06/10/2020 21:23:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Tools.Sql.BatchParser.dll">
+      <publishTime>04/03/2020 01:23:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Tools.Sql.BatchParser.pdb">
+      <publishTime>04/03/2020 01:14:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Assessment.dll">
+      <publishTime>04/03/2020 01:23:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Assessment.Types.dll">
+      <publishTime>04/03/2020 01:23:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.ConnectionInfo.dll">
+      <publishTime>04/03/2020 01:23:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.ConnectionInfo.pdb">
+      <publishTime>04/03/2020 01:15:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Dmf.Common.dll">
+      <publishTime>04/03/2020 01:23:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Dmf.Common.pdb">
+      <publishTime>04/03/2020 01:15:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Dmf.dll">
+      <publishTime>04/03/2020 01:23:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Dmf.pdb">
+      <publishTime>04/03/2020 01:19:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.Assessment.dll">
+      <publishTime>04/03/2020 01:23:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.Assessment.pdb">
+      <publishTime>04/03/2020 01:19:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.Collector.dll">
+      <publishTime>04/03/2020 01:23:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.Collector.pdb">
+      <publishTime>04/03/2020 01:15:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.CollectorEnum.dll">
+      <publishTime>04/03/2020 01:23:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.CollectorEnum.pdb">
+      <publishTime>04/03/2020 01:15:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.HadrData.dll">
+      <publishTime>04/03/2020 01:23:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.HadrData.pdb">
+      <publishTime>04/03/2020 01:19:06</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.HadrModel.dll">
+      <publishTime>04/03/2020 01:23:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.HadrModel.pdb">
+      <publishTime>04/03/2020 01:20:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.RegisteredServers.dll">
+      <publishTime>04/03/2020 01:23:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.RegisteredServers.pdb">
+      <publishTime>04/03/2020 01:19:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.Sdk.Sfc.dll">
+      <publishTime>04/03/2020 01:24:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.Sdk.Sfc.pdb">
+      <publishTime>04/03/2020 01:15:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.SmoMetadataProvider.dll">
+      <publishTime>04/03/2020 01:23:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.SmoMetadataProvider.pdb">
+      <publishTime>04/03/2020 01:19:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.SqlParser.dll">
+      <publishTime>03/10/2020 09:05:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.SqlParser.pdb">
+      <publishTime>03/10/2020 09:04:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.SqlScriptPublish.dll">
+      <publishTime>04/03/2020 01:23:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.SqlScriptPublish.pdb">
+      <publishTime>04/03/2020 01:20:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.XEvent.dll">
+      <publishTime>04/03/2020 01:23:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.XEvent.pdb">
+      <publishTime>04/03/2020 01:19:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.XEventDbScoped.dll">
+      <publishTime>04/03/2020 01:23:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.XEventDbScoped.pdb">
+      <publishTime>04/03/2020 01:20:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll">
+      <publishTime>04/03/2020 01:23:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.XEventDbScopedEnum.pdb">
+      <publishTime>04/03/2020 01:15:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.XEventEnum.dll">
+      <publishTime>04/03/2020 01:23:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Management.XEventEnum.pdb">
+      <publishTime>04/03/2020 01:15:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.PolicyEnum.dll">
+      <publishTime>04/03/2020 01:23:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.RegSvrEnum.dll">
+      <publishTime>04/03/2020 01:23:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.RegSvrEnum.pdb">
+      <publishTime>04/03/2020 01:15:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.ServiceBrokerEnum.dll">
+      <publishTime>04/03/2020 01:23:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.ServiceBrokerEnum.pdb">
+      <publishTime>04/03/2020 01:18:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Smo.dll">
+      <publishTime>04/03/2020 01:23:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Smo.Notebook.dll">
+      <publishTime>04/03/2020 01:23:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Smo.Notebook.pdb">
+      <publishTime>04/03/2020 01:19:06</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Smo.pdb">
+      <publishTime>04/03/2020 01:18:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.SmoExtended.dll">
+      <publishTime>04/03/2020 01:23:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.SmoExtended.pdb">
+      <publishTime>04/03/2020 01:19:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.SqlClrProvider.dll">
+      <publishTime>04/03/2020 01:23:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.SqlClrProvider.pdb">
+      <publishTime>04/03/2020 01:15:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.SqlEnum.dll">
+      <publishTime>04/03/2020 01:23:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.SqlEnum.pdb">
+      <publishTime>04/03/2020 01:15:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.SqlWmiManagement.dll">
+      <publishTime>04/03/2020 01:23:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.SqlWmiManagement.pdb">
+      <publishTime>04/03/2020 01:19:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.WmiEnum.dll">
+      <publishTime>04/03/2020 01:23:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.WmiEnum.pdb">
+      <publishTime>04/03/2020 01:19:40</publishTime>
+    </File>
+    <File Include="bin/Rainmaker.Common.dll">
+      <publishTime>06/10/2020 18:40:28</publishTime>
+    </File>
+    <File Include="bin/Rainmaker.Common.pdb">
+      <publishTime>06/10/2020 18:40:28</publishTime>
+    </File>
+    <File Include="bin/Rainmaker.DAL.dll">
+      <publishTime>06/11/2020 19:37:15</publishTime>
+    </File>
+    <File Include="bin/Rainmaker.DAL.dll.config">
+      <publishTime>06/10/2020 18:40:25</publishTime>
+    </File>
+    <File Include="bin/Rainmaker.DAL.pdb">
+      <publishTime>06/11/2020 19:37:15</publishTime>
+    </File>
+    <File Include="bin/RainmakerWS.dll">
+      <publishTime>06/11/2020 19:37:16</publishTime>
+    </File>
+    <File Include="bin/RainmakerWS.pdb">
+      <publishTime>06/11/2020 19:37:16</publishTime>
+    </File>
+    <File Include="CampaignService.asmx">
+      <publishTime>06/02/2020 16:47:16</publishTime>
+    </File>
+    <File Include="DBScript/CampaignDB_7digits.sql">
+      <publishTime>06/02/2020 16:47:16</publishTime>
+    </File>
+    <File Include="DBScript/CampaignDB_ddl.sql">
+      <publishTime>06/11/2020 19:11:02</publishTime>
+    </File>
+    <File Include="DBScript/CampaignDB_dml.sql">
+      <publishTime>06/02/2020 16:47:16</publishTime>
+    </File>
+    <File Include="DBScript/RainmakerMaster.sql">
+      <publishTime>06/02/2020 16:47:16</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/10/2020 12:10:07</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

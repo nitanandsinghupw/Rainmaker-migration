@@ -24,43 +24,11 @@ namespace Rainmaker.Web.CampaignWS {
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="CampaignServiceSoap", Namespace="http://tempuri.org/")]
     public partial class CampaignService : System.Web.Services.Protocols.SoapHttpClientProtocol {
-        
-        private System.Threading.SendOrPostCallback InsertUpdateScheduledCampaignOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback UpdateCampaignScheduleOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetPhoneLinesInUseCountOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback CheckCampaignTransferCallOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback SubmitAdminRequestOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetAdminRequestsOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback UpdateAdminRequestStatusOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetTrainingSchemeOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetTrainingPageListOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetTrainingSchemeListOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback UpdateActiveTrainingSchemeOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback DeleteTrainingSchemeOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback AddTrainingSchemeOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetTrainingPageOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback TrainingPageInsertUpdateOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetActiveTrainingPageListOperationCompleted;
         
         private System.Threading.SendOrPostCallback CampaignInsertUpdateOperationCompleted;
         
@@ -230,6 +198,38 @@ namespace Rainmaker.Web.CampaignWS {
         
         private System.Threading.SendOrPostCallback DeleteCampaignFieldOperationCompleted;
         
+        private System.Threading.SendOrPostCallback InsertUpdateScheduledCampaignOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback UpdateCampaignScheduleOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetPhoneLinesInUseCountOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback CheckCampaignTransferCallOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SubmitAdminRequestOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetAdminRequestsOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback UpdateAdminRequestStatusOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetTrainingSchemeOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetTrainingPageListOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetTrainingSchemeListOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback UpdateActiveTrainingSchemeOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback DeleteTrainingSchemeOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AddTrainingSchemeOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetTrainingPageOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback TrainingPageInsertUpdateOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetActiveTrainingPageListOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -267,54 +267,6 @@ namespace Rainmaker.Web.CampaignWS {
                 this.useDefaultCredentialsSetExplicitly = true;
             }
         }
-        
-        /// <remarks/>
-        public event InsertUpdateScheduledCampaignCompletedEventHandler InsertUpdateScheduledCampaignCompleted;
-        
-        /// <remarks/>
-        public event UpdateCampaignScheduleCompletedEventHandler UpdateCampaignScheduleCompleted;
-        
-        /// <remarks/>
-        public event GetPhoneLinesInUseCountCompletedEventHandler GetPhoneLinesInUseCountCompleted;
-        
-        /// <remarks/>
-        public event CheckCampaignTransferCallCompletedEventHandler CheckCampaignTransferCallCompleted;
-        
-        /// <remarks/>
-        public event SubmitAdminRequestCompletedEventHandler SubmitAdminRequestCompleted;
-        
-        /// <remarks/>
-        public event GetAdminRequestsCompletedEventHandler GetAdminRequestsCompleted;
-        
-        /// <remarks/>
-        public event UpdateAdminRequestStatusCompletedEventHandler UpdateAdminRequestStatusCompleted;
-        
-        /// <remarks/>
-        public event GetTrainingSchemeCompletedEventHandler GetTrainingSchemeCompleted;
-        
-        /// <remarks/>
-        public event GetTrainingPageListCompletedEventHandler GetTrainingPageListCompleted;
-        
-        /// <remarks/>
-        public event GetTrainingSchemeListCompletedEventHandler GetTrainingSchemeListCompleted;
-        
-        /// <remarks/>
-        public event UpdateActiveTrainingSchemeCompletedEventHandler UpdateActiveTrainingSchemeCompleted;
-        
-        /// <remarks/>
-        public event DeleteTrainingSchemeCompletedEventHandler DeleteTrainingSchemeCompleted;
-        
-        /// <remarks/>
-        public event AddTrainingSchemeCompletedEventHandler AddTrainingSchemeCompleted;
-        
-        /// <remarks/>
-        public event GetTrainingPageCompletedEventHandler GetTrainingPageCompleted;
-        
-        /// <remarks/>
-        public event TrainingPageInsertUpdateCompletedEventHandler TrainingPageInsertUpdateCompleted;
-        
-        /// <remarks/>
-        public event GetActiveTrainingPageListCompletedEventHandler GetActiveTrainingPageListCompleted;
         
         /// <remarks/>
         public event CampaignInsertUpdateCompletedEventHandler CampaignInsertUpdateCompleted;
@@ -569,486 +521,52 @@ namespace Rainmaker.Web.CampaignWS {
         public event DeleteCampaignFieldCompletedEventHandler DeleteCampaignFieldCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/InsertUpdateScheduledCampaign", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void InsertUpdateScheduledCampaign(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xCampaigndetails) {
-            this.Invoke("InsertUpdateScheduledCampaign", new object[] {
-                        xCampaign,
-                        xCampaigndetails});
-        }
+        public event InsertUpdateScheduledCampaignCompletedEventHandler InsertUpdateScheduledCampaignCompleted;
         
         /// <remarks/>
-        public void InsertUpdateScheduledCampaignAsync(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xCampaigndetails) {
-            this.InsertUpdateScheduledCampaignAsync(xCampaign, xCampaigndetails, null);
-        }
+        public event UpdateCampaignScheduleCompletedEventHandler UpdateCampaignScheduleCompleted;
         
         /// <remarks/>
-        public void InsertUpdateScheduledCampaignAsync(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xCampaigndetails, object userState) {
-            if ((this.InsertUpdateScheduledCampaignOperationCompleted == null)) {
-                this.InsertUpdateScheduledCampaignOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInsertUpdateScheduledCampaignOperationCompleted);
-            }
-            this.InvokeAsync("InsertUpdateScheduledCampaign", new object[] {
-                        xCampaign,
-                        xCampaigndetails}, this.InsertUpdateScheduledCampaignOperationCompleted, userState);
-        }
-        
-        private void OnInsertUpdateScheduledCampaignOperationCompleted(object arg) {
-            if ((this.InsertUpdateScheduledCampaignCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.InsertUpdateScheduledCampaignCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
+        public event GetPhoneLinesInUseCountCompletedEventHandler GetPhoneLinesInUseCountCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/UpdateCampaignSchedule", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void UpdateCampaignSchedule(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xCampaigndetails, bool isFromAgentInterface) {
-            this.Invoke("UpdateCampaignSchedule", new object[] {
-                        xCampaign,
-                        xCampaigndetails,
-                        isFromAgentInterface});
-        }
+        public event CheckCampaignTransferCallCompletedEventHandler CheckCampaignTransferCallCompleted;
         
         /// <remarks/>
-        public void UpdateCampaignScheduleAsync(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xCampaigndetails, bool isFromAgentInterface) {
-            this.UpdateCampaignScheduleAsync(xCampaign, xCampaigndetails, isFromAgentInterface, null);
-        }
+        public event SubmitAdminRequestCompletedEventHandler SubmitAdminRequestCompleted;
         
         /// <remarks/>
-        public void UpdateCampaignScheduleAsync(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xCampaigndetails, bool isFromAgentInterface, object userState) {
-            if ((this.UpdateCampaignScheduleOperationCompleted == null)) {
-                this.UpdateCampaignScheduleOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpdateCampaignScheduleOperationCompleted);
-            }
-            this.InvokeAsync("UpdateCampaignSchedule", new object[] {
-                        xCampaign,
-                        xCampaigndetails,
-                        isFromAgentInterface}, this.UpdateCampaignScheduleOperationCompleted, userState);
-        }
-        
-        private void OnUpdateCampaignScheduleOperationCompleted(object arg) {
-            if ((this.UpdateCampaignScheduleCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.UpdateCampaignScheduleCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
+        public event GetAdminRequestsCompletedEventHandler GetAdminRequestsCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetPhoneLinesInUseCount", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public int GetPhoneLinesInUseCount(long CampaignID) {
-            object[] results = this.Invoke("GetPhoneLinesInUseCount", new object[] {
-                        CampaignID});
-            return ((int)(results[0]));
-        }
+        public event UpdateAdminRequestStatusCompletedEventHandler UpdateAdminRequestStatusCompleted;
         
         /// <remarks/>
-        public void GetPhoneLinesInUseCountAsync(long CampaignID) {
-            this.GetPhoneLinesInUseCountAsync(CampaignID, null);
-        }
+        public event GetTrainingSchemeCompletedEventHandler GetTrainingSchemeCompleted;
         
         /// <remarks/>
-        public void GetPhoneLinesInUseCountAsync(long CampaignID, object userState) {
-            if ((this.GetPhoneLinesInUseCountOperationCompleted == null)) {
-                this.GetPhoneLinesInUseCountOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetPhoneLinesInUseCountOperationCompleted);
-            }
-            this.InvokeAsync("GetPhoneLinesInUseCount", new object[] {
-                        CampaignID}, this.GetPhoneLinesInUseCountOperationCompleted, userState);
-        }
-        
-        private void OnGetPhoneLinesInUseCountOperationCompleted(object arg) {
-            if ((this.GetPhoneLinesInUseCountCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetPhoneLinesInUseCountCompleted(this, new GetPhoneLinesInUseCountCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
+        public event GetTrainingPageListCompletedEventHandler GetTrainingPageListCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CheckCampaignTransferCall", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool CheckCampaignTransferCall(string strCampDB, long UniqueKey) {
-            object[] results = this.Invoke("CheckCampaignTransferCall", new object[] {
-                        strCampDB,
-                        UniqueKey});
-            return ((bool)(results[0]));
-        }
+        public event GetTrainingSchemeListCompletedEventHandler GetTrainingSchemeListCompleted;
         
         /// <remarks/>
-        public void CheckCampaignTransferCallAsync(string strCampDB, long UniqueKey) {
-            this.CheckCampaignTransferCallAsync(strCampDB, UniqueKey, null);
-        }
+        public event UpdateActiveTrainingSchemeCompletedEventHandler UpdateActiveTrainingSchemeCompleted;
         
         /// <remarks/>
-        public void CheckCampaignTransferCallAsync(string strCampDB, long UniqueKey, object userState) {
-            if ((this.CheckCampaignTransferCallOperationCompleted == null)) {
-                this.CheckCampaignTransferCallOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCheckCampaignTransferCallOperationCompleted);
-            }
-            this.InvokeAsync("CheckCampaignTransferCall", new object[] {
-                        strCampDB,
-                        UniqueKey}, this.CheckCampaignTransferCallOperationCompleted, userState);
-        }
-        
-        private void OnCheckCampaignTransferCallOperationCompleted(object arg) {
-            if ((this.CheckCampaignTransferCallCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.CheckCampaignTransferCallCompleted(this, new CheckCampaignTransferCallCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
+        public event DeleteTrainingSchemeCompletedEventHandler DeleteTrainingSchemeCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/SubmitAdminRequest", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void SubmitAdminRequest(int requestType, string requestData) {
-            this.Invoke("SubmitAdminRequest", new object[] {
-                        requestType,
-                        requestData});
-        }
+        public event AddTrainingSchemeCompletedEventHandler AddTrainingSchemeCompleted;
         
         /// <remarks/>
-        public void SubmitAdminRequestAsync(int requestType, string requestData) {
-            this.SubmitAdminRequestAsync(requestType, requestData, null);
-        }
+        public event GetTrainingPageCompletedEventHandler GetTrainingPageCompleted;
         
         /// <remarks/>
-        public void SubmitAdminRequestAsync(int requestType, string requestData, object userState) {
-            if ((this.SubmitAdminRequestOperationCompleted == null)) {
-                this.SubmitAdminRequestOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSubmitAdminRequestOperationCompleted);
-            }
-            this.InvokeAsync("SubmitAdminRequest", new object[] {
-                        requestType,
-                        requestData}, this.SubmitAdminRequestOperationCompleted, userState);
-        }
-        
-        private void OnSubmitAdminRequestOperationCompleted(object arg) {
-            if ((this.SubmitAdminRequestCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.SubmitAdminRequestCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
+        public event TrainingPageInsertUpdateCompletedEventHandler TrainingPageInsertUpdateCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetAdminRequests", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet GetAdminRequests() {
-            object[] results = this.Invoke("GetAdminRequests", new object[0]);
-            return ((System.Data.DataSet)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetAdminRequestsAsync() {
-            this.GetAdminRequestsAsync(null);
-        }
-        
-        /// <remarks/>
-        public void GetAdminRequestsAsync(object userState) {
-            if ((this.GetAdminRequestsOperationCompleted == null)) {
-                this.GetAdminRequestsOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetAdminRequestsOperationCompleted);
-            }
-            this.InvokeAsync("GetAdminRequests", new object[0], this.GetAdminRequestsOperationCompleted, userState);
-        }
-        
-        private void OnGetAdminRequestsOperationCompleted(object arg) {
-            if ((this.GetAdminRequestsCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetAdminRequestsCompleted(this, new GetAdminRequestsCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/UpdateAdminRequestStatus", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void UpdateAdminRequestStatus(long requestID, int requestStatus) {
-            this.Invoke("UpdateAdminRequestStatus", new object[] {
-                        requestID,
-                        requestStatus});
-        }
-        
-        /// <remarks/>
-        public void UpdateAdminRequestStatusAsync(long requestID, int requestStatus) {
-            this.UpdateAdminRequestStatusAsync(requestID, requestStatus, null);
-        }
-        
-        /// <remarks/>
-        public void UpdateAdminRequestStatusAsync(long requestID, int requestStatus, object userState) {
-            if ((this.UpdateAdminRequestStatusOperationCompleted == null)) {
-                this.UpdateAdminRequestStatusOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpdateAdminRequestStatusOperationCompleted);
-            }
-            this.InvokeAsync("UpdateAdminRequestStatus", new object[] {
-                        requestID,
-                        requestStatus}, this.UpdateAdminRequestStatusOperationCompleted, userState);
-        }
-        
-        private void OnUpdateAdminRequestStatusOperationCompleted(object arg) {
-            if ((this.UpdateAdminRequestStatusCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.UpdateAdminRequestStatusCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTrainingScheme", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Xml.XmlNode GetTrainingScheme(System.Xml.XmlNode xCampaign, long trainingSchemeID) {
-            object[] results = this.Invoke("GetTrainingScheme", new object[] {
-                        xCampaign,
-                        trainingSchemeID});
-            return ((System.Xml.XmlNode)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetTrainingSchemeAsync(System.Xml.XmlNode xCampaign, long trainingSchemeID) {
-            this.GetTrainingSchemeAsync(xCampaign, trainingSchemeID, null);
-        }
-        
-        /// <remarks/>
-        public void GetTrainingSchemeAsync(System.Xml.XmlNode xCampaign, long trainingSchemeID, object userState) {
-            if ((this.GetTrainingSchemeOperationCompleted == null)) {
-                this.GetTrainingSchemeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTrainingSchemeOperationCompleted);
-            }
-            this.InvokeAsync("GetTrainingScheme", new object[] {
-                        xCampaign,
-                        trainingSchemeID}, this.GetTrainingSchemeOperationCompleted, userState);
-        }
-        
-        private void OnGetTrainingSchemeOperationCompleted(object arg) {
-            if ((this.GetTrainingSchemeCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetTrainingSchemeCompleted(this, new GetTrainingSchemeCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTrainingPageList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet GetTrainingPageList(System.Xml.XmlNode xCampaign, long trainingSchemeID) {
-            object[] results = this.Invoke("GetTrainingPageList", new object[] {
-                        xCampaign,
-                        trainingSchemeID});
-            return ((System.Data.DataSet)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetTrainingPageListAsync(System.Xml.XmlNode xCampaign, long trainingSchemeID) {
-            this.GetTrainingPageListAsync(xCampaign, trainingSchemeID, null);
-        }
-        
-        /// <remarks/>
-        public void GetTrainingPageListAsync(System.Xml.XmlNode xCampaign, long trainingSchemeID, object userState) {
-            if ((this.GetTrainingPageListOperationCompleted == null)) {
-                this.GetTrainingPageListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTrainingPageListOperationCompleted);
-            }
-            this.InvokeAsync("GetTrainingPageList", new object[] {
-                        xCampaign,
-                        trainingSchemeID}, this.GetTrainingPageListOperationCompleted, userState);
-        }
-        
-        private void OnGetTrainingPageListOperationCompleted(object arg) {
-            if ((this.GetTrainingPageListCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetTrainingPageListCompleted(this, new GetTrainingPageListCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTrainingSchemeList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet GetTrainingSchemeList(System.Xml.XmlNode xCampaign) {
-            object[] results = this.Invoke("GetTrainingSchemeList", new object[] {
-                        xCampaign});
-            return ((System.Data.DataSet)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetTrainingSchemeListAsync(System.Xml.XmlNode xCampaign) {
-            this.GetTrainingSchemeListAsync(xCampaign, null);
-        }
-        
-        /// <remarks/>
-        public void GetTrainingSchemeListAsync(System.Xml.XmlNode xCampaign, object userState) {
-            if ((this.GetTrainingSchemeListOperationCompleted == null)) {
-                this.GetTrainingSchemeListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTrainingSchemeListOperationCompleted);
-            }
-            this.InvokeAsync("GetTrainingSchemeList", new object[] {
-                        xCampaign}, this.GetTrainingSchemeListOperationCompleted, userState);
-        }
-        
-        private void OnGetTrainingSchemeListOperationCompleted(object arg) {
-            if ((this.GetTrainingSchemeListCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetTrainingSchemeListCompleted(this, new GetTrainingSchemeListCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/UpdateActiveTrainingScheme", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void UpdateActiveTrainingScheme(System.Xml.XmlNode xCampaign, long trainingSchemeID) {
-            this.Invoke("UpdateActiveTrainingScheme", new object[] {
-                        xCampaign,
-                        trainingSchemeID});
-        }
-        
-        /// <remarks/>
-        public void UpdateActiveTrainingSchemeAsync(System.Xml.XmlNode xCampaign, long trainingSchemeID) {
-            this.UpdateActiveTrainingSchemeAsync(xCampaign, trainingSchemeID, null);
-        }
-        
-        /// <remarks/>
-        public void UpdateActiveTrainingSchemeAsync(System.Xml.XmlNode xCampaign, long trainingSchemeID, object userState) {
-            if ((this.UpdateActiveTrainingSchemeOperationCompleted == null)) {
-                this.UpdateActiveTrainingSchemeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpdateActiveTrainingSchemeOperationCompleted);
-            }
-            this.InvokeAsync("UpdateActiveTrainingScheme", new object[] {
-                        xCampaign,
-                        trainingSchemeID}, this.UpdateActiveTrainingSchemeOperationCompleted, userState);
-        }
-        
-        private void OnUpdateActiveTrainingSchemeOperationCompleted(object arg) {
-            if ((this.UpdateActiveTrainingSchemeCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.UpdateActiveTrainingSchemeCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/DeleteTrainingScheme", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void DeleteTrainingScheme(System.Xml.XmlNode xCampaign, long trainingSchemeID) {
-            this.Invoke("DeleteTrainingScheme", new object[] {
-                        xCampaign,
-                        trainingSchemeID});
-        }
-        
-        /// <remarks/>
-        public void DeleteTrainingSchemeAsync(System.Xml.XmlNode xCampaign, long trainingSchemeID) {
-            this.DeleteTrainingSchemeAsync(xCampaign, trainingSchemeID, null);
-        }
-        
-        /// <remarks/>
-        public void DeleteTrainingSchemeAsync(System.Xml.XmlNode xCampaign, long trainingSchemeID, object userState) {
-            if ((this.DeleteTrainingSchemeOperationCompleted == null)) {
-                this.DeleteTrainingSchemeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnDeleteTrainingSchemeOperationCompleted);
-            }
-            this.InvokeAsync("DeleteTrainingScheme", new object[] {
-                        xCampaign,
-                        trainingSchemeID}, this.DeleteTrainingSchemeOperationCompleted, userState);
-        }
-        
-        private void OnDeleteTrainingSchemeOperationCompleted(object arg) {
-            if ((this.DeleteTrainingSchemeCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.DeleteTrainingSchemeCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/AddTrainingScheme", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public long AddTrainingScheme(System.Xml.XmlNode xCampaign, string trainingSchemeName) {
-            object[] results = this.Invoke("AddTrainingScheme", new object[] {
-                        xCampaign,
-                        trainingSchemeName});
-            return ((long)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void AddTrainingSchemeAsync(System.Xml.XmlNode xCampaign, string trainingSchemeName) {
-            this.AddTrainingSchemeAsync(xCampaign, trainingSchemeName, null);
-        }
-        
-        /// <remarks/>
-        public void AddTrainingSchemeAsync(System.Xml.XmlNode xCampaign, string trainingSchemeName, object userState) {
-            if ((this.AddTrainingSchemeOperationCompleted == null)) {
-                this.AddTrainingSchemeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAddTrainingSchemeOperationCompleted);
-            }
-            this.InvokeAsync("AddTrainingScheme", new object[] {
-                        xCampaign,
-                        trainingSchemeName}, this.AddTrainingSchemeOperationCompleted, userState);
-        }
-        
-        private void OnAddTrainingSchemeOperationCompleted(object arg) {
-            if ((this.AddTrainingSchemeCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.AddTrainingSchemeCompleted(this, new AddTrainingSchemeCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTrainingPage", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Xml.XmlNode GetTrainingPage(System.Xml.XmlNode xCampaign, long trainingPageID) {
-            object[] results = this.Invoke("GetTrainingPage", new object[] {
-                        xCampaign,
-                        trainingPageID});
-            return ((System.Xml.XmlNode)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetTrainingPageAsync(System.Xml.XmlNode xCampaign, long trainingPageID) {
-            this.GetTrainingPageAsync(xCampaign, trainingPageID, null);
-        }
-        
-        /// <remarks/>
-        public void GetTrainingPageAsync(System.Xml.XmlNode xCampaign, long trainingPageID, object userState) {
-            if ((this.GetTrainingPageOperationCompleted == null)) {
-                this.GetTrainingPageOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTrainingPageOperationCompleted);
-            }
-            this.InvokeAsync("GetTrainingPage", new object[] {
-                        xCampaign,
-                        trainingPageID}, this.GetTrainingPageOperationCompleted, userState);
-        }
-        
-        private void OnGetTrainingPageOperationCompleted(object arg) {
-            if ((this.GetTrainingPageCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetTrainingPageCompleted(this, new GetTrainingPageCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/TrainingPageInsertUpdate", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Xml.XmlNode TrainingPageInsertUpdate(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xTrainingPage) {
-            object[] results = this.Invoke("TrainingPageInsertUpdate", new object[] {
-                        xCampaign,
-                        xTrainingPage});
-            return ((System.Xml.XmlNode)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void TrainingPageInsertUpdateAsync(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xTrainingPage) {
-            this.TrainingPageInsertUpdateAsync(xCampaign, xTrainingPage, null);
-        }
-        
-        /// <remarks/>
-        public void TrainingPageInsertUpdateAsync(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xTrainingPage, object userState) {
-            if ((this.TrainingPageInsertUpdateOperationCompleted == null)) {
-                this.TrainingPageInsertUpdateOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTrainingPageInsertUpdateOperationCompleted);
-            }
-            this.InvokeAsync("TrainingPageInsertUpdate", new object[] {
-                        xCampaign,
-                        xTrainingPage}, this.TrainingPageInsertUpdateOperationCompleted, userState);
-        }
-        
-        private void OnTrainingPageInsertUpdateOperationCompleted(object arg) {
-            if ((this.TrainingPageInsertUpdateCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.TrainingPageInsertUpdateCompleted(this, new TrainingPageInsertUpdateCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetActiveTrainingPageList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet GetActiveTrainingPageList(System.Xml.XmlNode xCampaign) {
-            object[] results = this.Invoke("GetActiveTrainingPageList", new object[] {
-                        xCampaign});
-            return ((System.Data.DataSet)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetActiveTrainingPageListAsync(System.Xml.XmlNode xCampaign) {
-            this.GetActiveTrainingPageListAsync(xCampaign, null);
-        }
-        
-        /// <remarks/>
-        public void GetActiveTrainingPageListAsync(System.Xml.XmlNode xCampaign, object userState) {
-            if ((this.GetActiveTrainingPageListOperationCompleted == null)) {
-                this.GetActiveTrainingPageListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetActiveTrainingPageListOperationCompleted);
-            }
-            this.InvokeAsync("GetActiveTrainingPageList", new object[] {
-                        xCampaign}, this.GetActiveTrainingPageListOperationCompleted, userState);
-        }
-        
-        private void OnGetActiveTrainingPageListOperationCompleted(object arg) {
-            if ((this.GetActiveTrainingPageListCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetActiveTrainingPageListCompleted(this, new GetActiveTrainingPageListCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
+        public event GetActiveTrainingPageListCompletedEventHandler GetActiveTrainingPageListCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CampaignInsertUpdate", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -3602,6 +3120,488 @@ namespace Rainmaker.Web.CampaignWS {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/InsertUpdateScheduledCampaign", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void InsertUpdateScheduledCampaign(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xCampaigndetails) {
+            this.Invoke("InsertUpdateScheduledCampaign", new object[] {
+                        xCampaign,
+                        xCampaigndetails});
+        }
+        
+        /// <remarks/>
+        public void InsertUpdateScheduledCampaignAsync(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xCampaigndetails) {
+            this.InsertUpdateScheduledCampaignAsync(xCampaign, xCampaigndetails, null);
+        }
+        
+        /// <remarks/>
+        public void InsertUpdateScheduledCampaignAsync(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xCampaigndetails, object userState) {
+            if ((this.InsertUpdateScheduledCampaignOperationCompleted == null)) {
+                this.InsertUpdateScheduledCampaignOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInsertUpdateScheduledCampaignOperationCompleted);
+            }
+            this.InvokeAsync("InsertUpdateScheduledCampaign", new object[] {
+                        xCampaign,
+                        xCampaigndetails}, this.InsertUpdateScheduledCampaignOperationCompleted, userState);
+        }
+        
+        private void OnInsertUpdateScheduledCampaignOperationCompleted(object arg) {
+            if ((this.InsertUpdateScheduledCampaignCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.InsertUpdateScheduledCampaignCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/UpdateCampaignSchedule", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void UpdateCampaignSchedule(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xCampaigndetails, bool isFromAgentInterface) {
+            this.Invoke("UpdateCampaignSchedule", new object[] {
+                        xCampaign,
+                        xCampaigndetails,
+                        isFromAgentInterface});
+        }
+        
+        /// <remarks/>
+        public void UpdateCampaignScheduleAsync(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xCampaigndetails, bool isFromAgentInterface) {
+            this.UpdateCampaignScheduleAsync(xCampaign, xCampaigndetails, isFromAgentInterface, null);
+        }
+        
+        /// <remarks/>
+        public void UpdateCampaignScheduleAsync(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xCampaigndetails, bool isFromAgentInterface, object userState) {
+            if ((this.UpdateCampaignScheduleOperationCompleted == null)) {
+                this.UpdateCampaignScheduleOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpdateCampaignScheduleOperationCompleted);
+            }
+            this.InvokeAsync("UpdateCampaignSchedule", new object[] {
+                        xCampaign,
+                        xCampaigndetails,
+                        isFromAgentInterface}, this.UpdateCampaignScheduleOperationCompleted, userState);
+        }
+        
+        private void OnUpdateCampaignScheduleOperationCompleted(object arg) {
+            if ((this.UpdateCampaignScheduleCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.UpdateCampaignScheduleCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetPhoneLinesInUseCount", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public int GetPhoneLinesInUseCount(long CampaignID) {
+            object[] results = this.Invoke("GetPhoneLinesInUseCount", new object[] {
+                        CampaignID});
+            return ((int)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetPhoneLinesInUseCountAsync(long CampaignID) {
+            this.GetPhoneLinesInUseCountAsync(CampaignID, null);
+        }
+        
+        /// <remarks/>
+        public void GetPhoneLinesInUseCountAsync(long CampaignID, object userState) {
+            if ((this.GetPhoneLinesInUseCountOperationCompleted == null)) {
+                this.GetPhoneLinesInUseCountOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetPhoneLinesInUseCountOperationCompleted);
+            }
+            this.InvokeAsync("GetPhoneLinesInUseCount", new object[] {
+                        CampaignID}, this.GetPhoneLinesInUseCountOperationCompleted, userState);
+        }
+        
+        private void OnGetPhoneLinesInUseCountOperationCompleted(object arg) {
+            if ((this.GetPhoneLinesInUseCountCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetPhoneLinesInUseCountCompleted(this, new GetPhoneLinesInUseCountCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CheckCampaignTransferCall", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool CheckCampaignTransferCall(string strCampDB, long UniqueKey) {
+            object[] results = this.Invoke("CheckCampaignTransferCall", new object[] {
+                        strCampDB,
+                        UniqueKey});
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void CheckCampaignTransferCallAsync(string strCampDB, long UniqueKey) {
+            this.CheckCampaignTransferCallAsync(strCampDB, UniqueKey, null);
+        }
+        
+        /// <remarks/>
+        public void CheckCampaignTransferCallAsync(string strCampDB, long UniqueKey, object userState) {
+            if ((this.CheckCampaignTransferCallOperationCompleted == null)) {
+                this.CheckCampaignTransferCallOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCheckCampaignTransferCallOperationCompleted);
+            }
+            this.InvokeAsync("CheckCampaignTransferCall", new object[] {
+                        strCampDB,
+                        UniqueKey}, this.CheckCampaignTransferCallOperationCompleted, userState);
+        }
+        
+        private void OnCheckCampaignTransferCallOperationCompleted(object arg) {
+            if ((this.CheckCampaignTransferCallCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CheckCampaignTransferCallCompleted(this, new CheckCampaignTransferCallCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/SubmitAdminRequest", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void SubmitAdminRequest(int requestType, string requestData) {
+            this.Invoke("SubmitAdminRequest", new object[] {
+                        requestType,
+                        requestData});
+        }
+        
+        /// <remarks/>
+        public void SubmitAdminRequestAsync(int requestType, string requestData) {
+            this.SubmitAdminRequestAsync(requestType, requestData, null);
+        }
+        
+        /// <remarks/>
+        public void SubmitAdminRequestAsync(int requestType, string requestData, object userState) {
+            if ((this.SubmitAdminRequestOperationCompleted == null)) {
+                this.SubmitAdminRequestOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSubmitAdminRequestOperationCompleted);
+            }
+            this.InvokeAsync("SubmitAdminRequest", new object[] {
+                        requestType,
+                        requestData}, this.SubmitAdminRequestOperationCompleted, userState);
+        }
+        
+        private void OnSubmitAdminRequestOperationCompleted(object arg) {
+            if ((this.SubmitAdminRequestCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SubmitAdminRequestCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetAdminRequests", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet GetAdminRequests() {
+            object[] results = this.Invoke("GetAdminRequests", new object[0]);
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetAdminRequestsAsync() {
+            this.GetAdminRequestsAsync(null);
+        }
+        
+        /// <remarks/>
+        public void GetAdminRequestsAsync(object userState) {
+            if ((this.GetAdminRequestsOperationCompleted == null)) {
+                this.GetAdminRequestsOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetAdminRequestsOperationCompleted);
+            }
+            this.InvokeAsync("GetAdminRequests", new object[0], this.GetAdminRequestsOperationCompleted, userState);
+        }
+        
+        private void OnGetAdminRequestsOperationCompleted(object arg) {
+            if ((this.GetAdminRequestsCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetAdminRequestsCompleted(this, new GetAdminRequestsCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/UpdateAdminRequestStatus", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void UpdateAdminRequestStatus(long requestID, int requestStatus) {
+            this.Invoke("UpdateAdminRequestStatus", new object[] {
+                        requestID,
+                        requestStatus});
+        }
+        
+        /// <remarks/>
+        public void UpdateAdminRequestStatusAsync(long requestID, int requestStatus) {
+            this.UpdateAdminRequestStatusAsync(requestID, requestStatus, null);
+        }
+        
+        /// <remarks/>
+        public void UpdateAdminRequestStatusAsync(long requestID, int requestStatus, object userState) {
+            if ((this.UpdateAdminRequestStatusOperationCompleted == null)) {
+                this.UpdateAdminRequestStatusOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpdateAdminRequestStatusOperationCompleted);
+            }
+            this.InvokeAsync("UpdateAdminRequestStatus", new object[] {
+                        requestID,
+                        requestStatus}, this.UpdateAdminRequestStatusOperationCompleted, userState);
+        }
+        
+        private void OnUpdateAdminRequestStatusOperationCompleted(object arg) {
+            if ((this.UpdateAdminRequestStatusCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.UpdateAdminRequestStatusCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTrainingScheme", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Xml.XmlNode GetTrainingScheme(System.Xml.XmlNode xCampaign, long trainingSchemeID) {
+            object[] results = this.Invoke("GetTrainingScheme", new object[] {
+                        xCampaign,
+                        trainingSchemeID});
+            return ((System.Xml.XmlNode)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetTrainingSchemeAsync(System.Xml.XmlNode xCampaign, long trainingSchemeID) {
+            this.GetTrainingSchemeAsync(xCampaign, trainingSchemeID, null);
+        }
+        
+        /// <remarks/>
+        public void GetTrainingSchemeAsync(System.Xml.XmlNode xCampaign, long trainingSchemeID, object userState) {
+            if ((this.GetTrainingSchemeOperationCompleted == null)) {
+                this.GetTrainingSchemeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTrainingSchemeOperationCompleted);
+            }
+            this.InvokeAsync("GetTrainingScheme", new object[] {
+                        xCampaign,
+                        trainingSchemeID}, this.GetTrainingSchemeOperationCompleted, userState);
+        }
+        
+        private void OnGetTrainingSchemeOperationCompleted(object arg) {
+            if ((this.GetTrainingSchemeCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetTrainingSchemeCompleted(this, new GetTrainingSchemeCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTrainingPageList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet GetTrainingPageList(System.Xml.XmlNode xCampaign, long trainingSchemeID) {
+            object[] results = this.Invoke("GetTrainingPageList", new object[] {
+                        xCampaign,
+                        trainingSchemeID});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetTrainingPageListAsync(System.Xml.XmlNode xCampaign, long trainingSchemeID) {
+            this.GetTrainingPageListAsync(xCampaign, trainingSchemeID, null);
+        }
+        
+        /// <remarks/>
+        public void GetTrainingPageListAsync(System.Xml.XmlNode xCampaign, long trainingSchemeID, object userState) {
+            if ((this.GetTrainingPageListOperationCompleted == null)) {
+                this.GetTrainingPageListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTrainingPageListOperationCompleted);
+            }
+            this.InvokeAsync("GetTrainingPageList", new object[] {
+                        xCampaign,
+                        trainingSchemeID}, this.GetTrainingPageListOperationCompleted, userState);
+        }
+        
+        private void OnGetTrainingPageListOperationCompleted(object arg) {
+            if ((this.GetTrainingPageListCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetTrainingPageListCompleted(this, new GetTrainingPageListCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTrainingSchemeList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet GetTrainingSchemeList(System.Xml.XmlNode xCampaign) {
+            object[] results = this.Invoke("GetTrainingSchemeList", new object[] {
+                        xCampaign});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetTrainingSchemeListAsync(System.Xml.XmlNode xCampaign) {
+            this.GetTrainingSchemeListAsync(xCampaign, null);
+        }
+        
+        /// <remarks/>
+        public void GetTrainingSchemeListAsync(System.Xml.XmlNode xCampaign, object userState) {
+            if ((this.GetTrainingSchemeListOperationCompleted == null)) {
+                this.GetTrainingSchemeListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTrainingSchemeListOperationCompleted);
+            }
+            this.InvokeAsync("GetTrainingSchemeList", new object[] {
+                        xCampaign}, this.GetTrainingSchemeListOperationCompleted, userState);
+        }
+        
+        private void OnGetTrainingSchemeListOperationCompleted(object arg) {
+            if ((this.GetTrainingSchemeListCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetTrainingSchemeListCompleted(this, new GetTrainingSchemeListCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/UpdateActiveTrainingScheme", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void UpdateActiveTrainingScheme(System.Xml.XmlNode xCampaign, long trainingSchemeID) {
+            this.Invoke("UpdateActiveTrainingScheme", new object[] {
+                        xCampaign,
+                        trainingSchemeID});
+        }
+        
+        /// <remarks/>
+        public void UpdateActiveTrainingSchemeAsync(System.Xml.XmlNode xCampaign, long trainingSchemeID) {
+            this.UpdateActiveTrainingSchemeAsync(xCampaign, trainingSchemeID, null);
+        }
+        
+        /// <remarks/>
+        public void UpdateActiveTrainingSchemeAsync(System.Xml.XmlNode xCampaign, long trainingSchemeID, object userState) {
+            if ((this.UpdateActiveTrainingSchemeOperationCompleted == null)) {
+                this.UpdateActiveTrainingSchemeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpdateActiveTrainingSchemeOperationCompleted);
+            }
+            this.InvokeAsync("UpdateActiveTrainingScheme", new object[] {
+                        xCampaign,
+                        trainingSchemeID}, this.UpdateActiveTrainingSchemeOperationCompleted, userState);
+        }
+        
+        private void OnUpdateActiveTrainingSchemeOperationCompleted(object arg) {
+            if ((this.UpdateActiveTrainingSchemeCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.UpdateActiveTrainingSchemeCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/DeleteTrainingScheme", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void DeleteTrainingScheme(System.Xml.XmlNode xCampaign, long trainingSchemeID) {
+            this.Invoke("DeleteTrainingScheme", new object[] {
+                        xCampaign,
+                        trainingSchemeID});
+        }
+        
+        /// <remarks/>
+        public void DeleteTrainingSchemeAsync(System.Xml.XmlNode xCampaign, long trainingSchemeID) {
+            this.DeleteTrainingSchemeAsync(xCampaign, trainingSchemeID, null);
+        }
+        
+        /// <remarks/>
+        public void DeleteTrainingSchemeAsync(System.Xml.XmlNode xCampaign, long trainingSchemeID, object userState) {
+            if ((this.DeleteTrainingSchemeOperationCompleted == null)) {
+                this.DeleteTrainingSchemeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnDeleteTrainingSchemeOperationCompleted);
+            }
+            this.InvokeAsync("DeleteTrainingScheme", new object[] {
+                        xCampaign,
+                        trainingSchemeID}, this.DeleteTrainingSchemeOperationCompleted, userState);
+        }
+        
+        private void OnDeleteTrainingSchemeOperationCompleted(object arg) {
+            if ((this.DeleteTrainingSchemeCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.DeleteTrainingSchemeCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/AddTrainingScheme", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public long AddTrainingScheme(System.Xml.XmlNode xCampaign, string trainingSchemeName) {
+            object[] results = this.Invoke("AddTrainingScheme", new object[] {
+                        xCampaign,
+                        trainingSchemeName});
+            return ((long)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AddTrainingSchemeAsync(System.Xml.XmlNode xCampaign, string trainingSchemeName) {
+            this.AddTrainingSchemeAsync(xCampaign, trainingSchemeName, null);
+        }
+        
+        /// <remarks/>
+        public void AddTrainingSchemeAsync(System.Xml.XmlNode xCampaign, string trainingSchemeName, object userState) {
+            if ((this.AddTrainingSchemeOperationCompleted == null)) {
+                this.AddTrainingSchemeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAddTrainingSchemeOperationCompleted);
+            }
+            this.InvokeAsync("AddTrainingScheme", new object[] {
+                        xCampaign,
+                        trainingSchemeName}, this.AddTrainingSchemeOperationCompleted, userState);
+        }
+        
+        private void OnAddTrainingSchemeOperationCompleted(object arg) {
+            if ((this.AddTrainingSchemeCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AddTrainingSchemeCompleted(this, new AddTrainingSchemeCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTrainingPage", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Xml.XmlNode GetTrainingPage(System.Xml.XmlNode xCampaign, long trainingPageID) {
+            object[] results = this.Invoke("GetTrainingPage", new object[] {
+                        xCampaign,
+                        trainingPageID});
+            return ((System.Xml.XmlNode)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetTrainingPageAsync(System.Xml.XmlNode xCampaign, long trainingPageID) {
+            this.GetTrainingPageAsync(xCampaign, trainingPageID, null);
+        }
+        
+        /// <remarks/>
+        public void GetTrainingPageAsync(System.Xml.XmlNode xCampaign, long trainingPageID, object userState) {
+            if ((this.GetTrainingPageOperationCompleted == null)) {
+                this.GetTrainingPageOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTrainingPageOperationCompleted);
+            }
+            this.InvokeAsync("GetTrainingPage", new object[] {
+                        xCampaign,
+                        trainingPageID}, this.GetTrainingPageOperationCompleted, userState);
+        }
+        
+        private void OnGetTrainingPageOperationCompleted(object arg) {
+            if ((this.GetTrainingPageCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetTrainingPageCompleted(this, new GetTrainingPageCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/TrainingPageInsertUpdate", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Xml.XmlNode TrainingPageInsertUpdate(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xTrainingPage) {
+            object[] results = this.Invoke("TrainingPageInsertUpdate", new object[] {
+                        xCampaign,
+                        xTrainingPage});
+            return ((System.Xml.XmlNode)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void TrainingPageInsertUpdateAsync(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xTrainingPage) {
+            this.TrainingPageInsertUpdateAsync(xCampaign, xTrainingPage, null);
+        }
+        
+        /// <remarks/>
+        public void TrainingPageInsertUpdateAsync(System.Xml.XmlNode xCampaign, System.Xml.XmlNode xTrainingPage, object userState) {
+            if ((this.TrainingPageInsertUpdateOperationCompleted == null)) {
+                this.TrainingPageInsertUpdateOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTrainingPageInsertUpdateOperationCompleted);
+            }
+            this.InvokeAsync("TrainingPageInsertUpdate", new object[] {
+                        xCampaign,
+                        xTrainingPage}, this.TrainingPageInsertUpdateOperationCompleted, userState);
+        }
+        
+        private void OnTrainingPageInsertUpdateOperationCompleted(object arg) {
+            if ((this.TrainingPageInsertUpdateCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.TrainingPageInsertUpdateCompleted(this, new TrainingPageInsertUpdateCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetActiveTrainingPageList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet GetActiveTrainingPageList(System.Xml.XmlNode xCampaign) {
+            object[] results = this.Invoke("GetActiveTrainingPageList", new object[] {
+                        xCampaign});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetActiveTrainingPageListAsync(System.Xml.XmlNode xCampaign) {
+            this.GetActiveTrainingPageListAsync(xCampaign, null);
+        }
+        
+        /// <remarks/>
+        public void GetActiveTrainingPageListAsync(System.Xml.XmlNode xCampaign, object userState) {
+            if ((this.GetActiveTrainingPageListOperationCompleted == null)) {
+                this.GetActiveTrainingPageListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetActiveTrainingPageListOperationCompleted);
+            }
+            this.InvokeAsync("GetActiveTrainingPageList", new object[] {
+                        xCampaign}, this.GetActiveTrainingPageListOperationCompleted, userState);
+        }
+        
+        private void OnGetActiveTrainingPageListOperationCompleted(object arg) {
+            if ((this.GetActiveTrainingPageListCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetActiveTrainingPageListCompleted(this, new GetActiveTrainingPageListCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -3621,295 +3621,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    public delegate void InsertUpdateScheduledCampaignCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    public delegate void UpdateCampaignScheduleCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    public delegate void GetPhoneLinesInUseCountCompletedEventHandler(object sender, GetPhoneLinesInUseCountCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetPhoneLinesInUseCountCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetPhoneLinesInUseCountCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public int Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((int)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    public delegate void CheckCampaignTransferCallCompletedEventHandler(object sender, CheckCampaignTransferCallCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class CheckCampaignTransferCallCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal CheckCampaignTransferCallCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    public delegate void SubmitAdminRequestCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    public delegate void GetAdminRequestsCompletedEventHandler(object sender, GetAdminRequestsCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetAdminRequestsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetAdminRequestsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    public delegate void UpdateAdminRequestStatusCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    public delegate void GetTrainingSchemeCompletedEventHandler(object sender, GetTrainingSchemeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetTrainingSchemeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetTrainingSchemeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Xml.XmlNode Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Xml.XmlNode)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    public delegate void GetTrainingPageListCompletedEventHandler(object sender, GetTrainingPageListCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetTrainingPageListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetTrainingPageListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    public delegate void GetTrainingSchemeListCompletedEventHandler(object sender, GetTrainingSchemeListCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetTrainingSchemeListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetTrainingSchemeListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    public delegate void UpdateActiveTrainingSchemeCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    public delegate void DeleteTrainingSchemeCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    public delegate void AddTrainingSchemeCompletedEventHandler(object sender, AddTrainingSchemeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class AddTrainingSchemeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal AddTrainingSchemeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public long Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((long)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    public delegate void GetTrainingPageCompletedEventHandler(object sender, GetTrainingPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetTrainingPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetTrainingPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Xml.XmlNode Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Xml.XmlNode)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    public delegate void TrainingPageInsertUpdateCompletedEventHandler(object sender, TrainingPageInsertUpdateCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class TrainingPageInsertUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal TrainingPageInsertUpdateCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Xml.XmlNode Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Xml.XmlNode)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    public delegate void GetActiveTrainingPageListCompletedEventHandler(object sender, GetActiveTrainingPageListCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetActiveTrainingPageListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetActiveTrainingPageListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void CampaignInsertUpdateCompletedEventHandler(object sender, CampaignInsertUpdateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CampaignInsertUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -3931,15 +3647,15 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void ScrubDNCCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void CampaignCloneCompletedEventHandler(object sender, CampaignCloneCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CampaignCloneCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -3961,11 +3677,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void CampaignStatusUpdateCompletedEventHandler(object sender, CampaignStatusUpdateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CampaignStatusUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -3987,19 +3703,19 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void ResetCampaignsToIdleCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void ShutdownAllCampaignsCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetCampaignActiveDialCountCompletedEventHandler(object sender, GetCampaignActiveDialCountCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetCampaignActiveDialCountCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4021,11 +3737,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void CampaignDialStatusUpdateCompletedEventHandler(object sender, CampaignDialStatusUpdateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CampaignDialStatusUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4047,11 +3763,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetCampaignListCompletedEventHandler(object sender, GetCampaignListCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetCampaignListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4073,11 +3789,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetActiveCampaignListCompletedEventHandler(object sender, GetActiveCampaignListCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetActiveCampaignListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4099,11 +3815,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetCampaignScoreBoardDataCompletedEventHandler(object sender, GetCampaignScoreBoardDataCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetCampaignScoreBoardDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4125,11 +3841,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void DeleteCampaignCompletedEventHandler(object sender, DeleteCampaignCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class DeleteCampaignCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4151,11 +3867,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetCampaignByCampaignIDCompletedEventHandler(object sender, GetCampaignByCampaignIDCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetCampaignByCampaignIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4177,23 +3893,23 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void DeleteExportedLeadsCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void UpdateCallDetailCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void SetCallHangupCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void IsCallHangupCompletedEventHandler(object sender, IsCallHangupCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class IsCallHangupCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4215,23 +3931,23 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void AddAgentToCallDetailCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void AddVerificationAgentToCallDetailCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void AddResultCodeToCallListCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetOffsiteTransferNumberCompletedEventHandler(object sender, GetOffsiteTransferNumberCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetOffsiteTransferNumberCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4253,23 +3969,23 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void LogSilentCallCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void UpdateCallCompletionCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void UpdateCampaignDetailsCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetCampaignDetailsByKeyCompletedEventHandler(object sender, GetCampaignDetailsByKeyCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetCampaignDetailsByKeyCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4291,11 +4007,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetManualDailCallDetailsCompletedEventHandler(object sender, GetManualDailCallDetailsCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetManualDailCallDetailsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4317,11 +4033,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetResultCodesCompletedEventHandler(object sender, GetResultCodesCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetResultCodesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4343,11 +4059,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void ResultCodeInsertUpdateCompletedEventHandler(object sender, ResultCodeInsertUpdateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ResultCodeInsertUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4369,11 +4085,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetResultCodeByResultCodeIDCompletedEventHandler(object sender, GetResultCodeByResultCodeIDCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetResultCodeByResultCodeIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4395,11 +4111,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetOtherParameterCompletedEventHandler(object sender, GetOtherParameterCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetOtherParameterCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4421,11 +4137,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void OtherParameterInsertUpdateCompletedEventHandler(object sender, OtherParameterInsertUpdateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class OtherParameterInsertUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4447,11 +4163,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetDialingParameterCompletedEventHandler(object sender, GetDialingParameterCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetDialingParameterCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4473,11 +4189,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void DialingParameterInsertUpdateCompletedEventHandler(object sender, DialingParameterInsertUpdateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class DialingParameterInsertUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4499,11 +4215,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void InsertDialerActivityCompletedEventHandler(object sender, InsertDialerActivityCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class InsertDialerActivityCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4525,19 +4241,19 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void UpdateDialerStartCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void UpdateDialerStopCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetDigitalizedRecordingCompletedEventHandler(object sender, GetDigitalizedRecordingCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetDigitalizedRecordingCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4559,11 +4275,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void DigitalizedRecordingInsertUpdateCompletedEventHandler(object sender, DigitalizedRecordingInsertUpdateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class DigitalizedRecordingInsertUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4585,11 +4301,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetCampaignQueryStatusCompletedEventHandler(object sender, GetCampaignQueryStatusCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetCampaignQueryStatusCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4611,15 +4327,15 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void UpdateQueryStatusCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void PrepareDialerQueryCompletedEventHandler(object sender, PrepareDialerQueryCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class PrepareDialerQueryCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4641,35 +4357,35 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void CampaignQueryStatusUpdateCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void CampaignQueryStatusUpdateDialerCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void CampaignQueryCompleteCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void UpdateCampaignQueryStatsCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void UpdateCampaignQueryInDialerQueueCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void ClearQueryStatsCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetScriptListCompletedEventHandler(object sender, GetScriptListCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetScriptListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4691,11 +4407,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetPageListByScriptIdCompletedEventHandler(object sender, GetPageListByScriptIdCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetPageListByScriptIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4717,11 +4433,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetScriptByScriptIDCompletedEventHandler(object sender, GetScriptByScriptIDCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetScriptByScriptIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4743,11 +4459,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetScriptByScriptGUIDCompletedEventHandler(object sender, GetScriptByScriptGUIDCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetScriptByScriptGUIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4769,11 +4485,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void CloneScriptCompletedEventHandler(object sender, CloneScriptCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CloneScriptCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4795,11 +4511,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void ScriptInsertUpdateCompletedEventHandler(object sender, ScriptInsertUpdateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ScriptInsertUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4821,11 +4537,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void DeleteScriptCompletedEventHandler(object sender, DeleteScriptCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class DeleteScriptCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4847,11 +4563,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void QueryDetailInsertUpdateCompletedEventHandler(object sender, QueryDetailInsertUpdateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class QueryDetailInsertUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4873,11 +4589,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetQueryListCompletedEventHandler(object sender, GetQueryListCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetQueryListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4899,11 +4615,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetActiveQueryListCompletedEventHandler(object sender, GetActiveQueryListCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetActiveQueryListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4925,11 +4641,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetStandbyQueryListCompletedEventHandler(object sender, GetStandbyQueryListCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetStandbyQueryListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4951,11 +4667,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetCampaignDataCompletedEventHandler(object sender, GetCampaignDataCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetCampaignDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4977,11 +4693,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetCampaignData_Recycle_LastCompletedEventHandler(object sender, GetCampaignData_Recycle_LastCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetCampaignData_Recycle_LastCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5003,11 +4719,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void IsNeverCallSetCompletedEventHandler(object sender, IsNeverCallSetCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class IsNeverCallSetCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5029,19 +4745,19 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void UpdateAvailableCountToQueryCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void UpdateCampaignQueriesStatsCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetQueryDetailsByQueryIDCompletedEventHandler(object sender, GetQueryDetailsByQueryIDCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetQueryDetailsByQueryIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5063,11 +4779,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void DeleteQueryCompletedEventHandler(object sender, DeleteQueryCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class DeleteQueryCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5089,11 +4805,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void DeleteQueryByNameCompletedEventHandler(object sender, DeleteQueryByNameCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class DeleteQueryByNameCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5115,11 +4831,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void DeleteQueryDetailCompletedEventHandler(object sender, DeleteQueryDetailCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class DeleteQueryDetailCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5141,11 +4857,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void AreaCodeRuleInsertUpdateCompletedEventHandler(object sender, AreaCodeRuleInsertUpdateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AreaCodeRuleInsertUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5167,11 +4883,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void AreaCodeInsertUpdateCompletedEventHandler(object sender, AreaCodeInsertUpdateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AreaCodeInsertUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5193,11 +4909,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetAreaCodeCompletedEventHandler(object sender, GetAreaCodeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetAreaCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5219,15 +4935,15 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void DeleteAreaCodeCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetAreaCodeRuleByAgentIDCompletedEventHandler(object sender, GetAreaCodeRuleByAgentIDCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetAreaCodeRuleByAgentIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5249,11 +4965,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GlobalDialingInsertUpdateCompletedEventHandler(object sender, GlobalDialingInsertUpdateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GlobalDialingInsertUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5275,11 +4991,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetGlobalDialingParamsCompletedEventHandler(object sender, GetGlobalDialingParamsCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetGlobalDialingParamsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5301,11 +5017,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetAgentStatCompletedEventHandler(object sender, GetAgentStatCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetAgentStatCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5327,11 +5043,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetAgentStatByStatIDCompletedEventHandler(object sender, GetAgentStatByStatIDCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetAgentStatByStatIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5353,11 +5069,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void InsertUpdateAgentStatCompletedEventHandler(object sender, InsertUpdateAgentStatCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class InsertUpdateAgentStatCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5379,19 +5095,19 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void UpdateAgentStatsCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void UpdateAgentStatusCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetCampaignFieldsCompletedEventHandler(object sender, GetCampaignFieldsCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetCampaignFieldsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5413,11 +5129,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetCampaignStatusCompletedEventHandler(object sender, GetCampaignStatusCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetCampaignStatusCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5439,11 +5155,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void GetFieldTypesCompletedEventHandler(object sender, GetFieldTypesCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetFieldTypesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5465,11 +5181,11 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void CampaignFieldsInsertUpdateCompletedEventHandler(object sender, CampaignFieldsInsertUpdateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CampaignFieldsInsertUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5491,8 +5207,292 @@ namespace Rainmaker.Web.CampaignWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
     public delegate void DeleteCampaignFieldCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    public delegate void InsertUpdateScheduledCampaignCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    public delegate void UpdateCampaignScheduleCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    public delegate void GetPhoneLinesInUseCountCompletedEventHandler(object sender, GetPhoneLinesInUseCountCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetPhoneLinesInUseCountCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetPhoneLinesInUseCountCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    public delegate void CheckCampaignTransferCallCompletedEventHandler(object sender, CheckCampaignTransferCallCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CheckCampaignTransferCallCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CheckCampaignTransferCallCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    public delegate void SubmitAdminRequestCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    public delegate void GetAdminRequestsCompletedEventHandler(object sender, GetAdminRequestsCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetAdminRequestsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetAdminRequestsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    public delegate void UpdateAdminRequestStatusCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    public delegate void GetTrainingSchemeCompletedEventHandler(object sender, GetTrainingSchemeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetTrainingSchemeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetTrainingSchemeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Xml.XmlNode Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Xml.XmlNode)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    public delegate void GetTrainingPageListCompletedEventHandler(object sender, GetTrainingPageListCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetTrainingPageListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetTrainingPageListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    public delegate void GetTrainingSchemeListCompletedEventHandler(object sender, GetTrainingSchemeListCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetTrainingSchemeListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetTrainingSchemeListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    public delegate void UpdateActiveTrainingSchemeCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    public delegate void DeleteTrainingSchemeCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    public delegate void AddTrainingSchemeCompletedEventHandler(object sender, AddTrainingSchemeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AddTrainingSchemeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AddTrainingSchemeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public long Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((long)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    public delegate void GetTrainingPageCompletedEventHandler(object sender, GetTrainingPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetTrainingPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetTrainingPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Xml.XmlNode Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Xml.XmlNode)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    public delegate void TrainingPageInsertUpdateCompletedEventHandler(object sender, TrainingPageInsertUpdateCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class TrainingPageInsertUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal TrainingPageInsertUpdateCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Xml.XmlNode Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Xml.XmlNode)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    public delegate void GetActiveTrainingPageListCompletedEventHandler(object sender, GetActiveTrainingPageListCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetActiveTrainingPageListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetActiveTrainingPageListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
 }
 
 #pragma warning restore 1591

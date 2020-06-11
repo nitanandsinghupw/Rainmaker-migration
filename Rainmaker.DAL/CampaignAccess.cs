@@ -2646,7 +2646,7 @@ namespace Rainmaker.DAL
                     Microsoft.SqlServer.Management.Smo.Server server =
                         new Microsoft.SqlServer.Management.Smo.Server(new Microsoft.SqlServer.Management.Common.ServerConnection(conn));
 
-                    //    int result = server.ConnectionContext.ExecuteNonQuery(sbScript.ToString());
+                     int result = server.ConnectionContext.ExecuteNonQuery(sbScript.ToString());
                     //int result1 = server.ConnectionContext.ExecuteNonQuery("UPDATE dbo.CampaignFields SET [dbo].[CampaignFields].[Value] = 7 WHERE [dbo].[CampaignFields].[FieldID] = 8");
                 }
                 catch (Exception exp)
@@ -2659,10 +2659,13 @@ namespace Rainmaker.DAL
                 {
                     if (otherSqlCommands != "")
                     {
-                        int result = SqlHelper.ExecuteNonQuery(dbConnString, CommandType.Text, otherSqlCommands);
+                       // int result = SqlHelper.ExecuteNonQuery(dbConnString, CommandType.Text, otherSqlCommands);
                     }
                 }
-                catch { }
+                catch (Exception ex)
+                { 
+                
+                }
             }
         }
 
